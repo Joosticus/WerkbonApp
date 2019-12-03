@@ -1,0 +1,95 @@
+﻿@page
+@model WerkbonAppTest3.Pages.Uitvoeringsgegevens.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>UitvoeringsData</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="UitvoeringsData.ID" />
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.MedewerkerID" class="control-label"></label>
+                <select asp-for="UitvoeringsData.MedewerkerID" class="form-control" asp-items="ViewBag.MedewerkerID"></select>
+                <span asp-validation-for="UitvoeringsData.MedewerkerID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Vertrekuur" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Vertrekuur" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Vertrekuur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Inpakuren" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Inpakuren" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Inpakuren" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Montageuren" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Montageuren" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Montageuren" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Aantal_Laden" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Aantal_Laden" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Aantal_Laden" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Start_Laden" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Start_Laden" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Start_Laden" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Eind_Laden" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Eind_Laden" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Eind_Laden" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Laaduren" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Laaduren" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Laaduren" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Aantal_Lossen" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Aantal_Lossen" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Aantal_Lossen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Start_Lossen" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Start_Lossen" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Start_Lossen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Eind_Lossen" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Eind_Lossen" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Eind_Lossen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Losuren" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Losuren" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Losuren" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UitvoeringsData.Aankomst_Tijd" class="control-label"></label>
+                <input asp-for="UitvoeringsData.Aankomst_Tijd" class="form-control" />
+                <span asp-validation-for="UitvoeringsData.Aankomst_Tijd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

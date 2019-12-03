@@ -1,0 +1,54 @@
+﻿@page
+@model WerkbonAppTest3.Pages.Klanten.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Klant[0].Naam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Klant[0].Datum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Klant[0].Contactpersoon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Klant[0].Rekening)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Klant) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Naam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Datum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contactpersoon)
+            </td>
+            <td>
+                <p class="euro">€</p>@Html.DisplayFor(modelItem => item.Rekening.Bedrag)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

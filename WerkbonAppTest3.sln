@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WerkbonAppTest3", "WerkbonAppTest3.csproj", "{EE1CDB8A-1CCA-45A5-99A6-F0A03D6F47FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE1CDB8A-1CCA-45A5-99A6-F0A03D6F47FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE1CDB8A-1CCA-45A5-99A6-F0A03D6F47FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE1CDB8A-1CCA-45A5-99A6-F0A03D6F47FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE1CDB8A-1CCA-45A5-99A6-F0A03D6F47FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06512F71-9C82-407B-A81D-1DFB01D8F807}
+	EndGlobalSection
+EndGlobal
