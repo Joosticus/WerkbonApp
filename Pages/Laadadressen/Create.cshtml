@@ -1,0 +1,49 @@
+﻿@page
+@model WerkbonAppTest3.Pages.Laadadressen.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Laadadres</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Laadadres.Straat" class="control-label"></label>
+                <input asp-for="Laadadres.Straat" class="form-control" />
+                <span asp-validation-for="Laadadres.Straat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Laadadres.Postcode" class="control-label"></label>
+                <input asp-for="Laadadres.Postcode" class="form-control" />
+                <span asp-validation-for="Laadadres.Postcode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Laadadres.Plaats" class="control-label"></label>
+                <input asp-for="Laadadres.Plaats" class="form-control" />
+                <span asp-validation-for="Laadadres.Plaats" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Laadadres.Etage" class="control-label"></label>
+                <input asp-for="Laadadres.Etage" class="form-control" />
+                <span asp-validation-for="Laadadres.Etage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -21,5 +21,15 @@ namespace WerkbonAppTest3.Data
         public DbSet<WerkbonAppTest3.Models.Rekening> Rekening { get; set; }
 
         public DbSet<WerkbonAppTest3.Models.Klant> Klant { get; set; }
+
+        public DbSet<WerkbonAppTest3.Models.Ongeluk> Ongeluk { get; set; }
+
+        public DbSet<WerkbonAppTest3.Models.Verhuiswagen> Verhuiswagen { get; set; }
+
+        public DbSet<WerkbonAppTest3.Models.Laadadres> Laadadres { get; set; }
+
+        public DbSet<WerkbonAppTest3.Models.Losadres> Losadres { get; set; }
+
+        public DbSet<WerkbonAppTest3.Models.Werkbon> Werkbon { get; set; }
     }
 }

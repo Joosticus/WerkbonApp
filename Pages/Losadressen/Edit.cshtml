@@ -1,0 +1,50 @@
+﻿@page
+@model WerkbonAppTest3.Pages.Losadressen.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Losadres</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Losadres.ID" />
+            <div class="form-group">
+                <label asp-for="Losadres.Straat" class="control-label"></label>
+                <input asp-for="Losadres.Straat" class="form-control" />
+                <span asp-validation-for="Losadres.Straat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Losadres.Postcode" class="control-label"></label>
+                <input asp-for="Losadres.Postcode" class="form-control" />
+                <span asp-validation-for="Losadres.Postcode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Losadres.Plaats" class="control-label"></label>
+                <input asp-for="Losadres.Plaats" class="form-control" />
+                <span asp-validation-for="Losadres.Plaats" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Losadres.Etage" class="control-label"></label>
+                <input asp-for="Losadres.Etage" class="form-control" />
+                <span asp-validation-for="Losadres.Etage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
