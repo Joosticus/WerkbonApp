@@ -10,8 +10,8 @@ using WerkbonAppTest3.Data;
 namespace WerkbonAppTest3.Migrations
 {
     [DbContext(typeof(WerkbonAppTest3Context))]
-    [Migration("20191204101417_losadres")]
-    partial class losadres
+    [Migration("20191206114053_werkbon")]
+    partial class werkbon
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -229,6 +229,24 @@ namespace WerkbonAppTest3.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Verhuiswagen");
+                });
+
+            modelBuilder.Entity("WerkbonAppTest3.Models.Werkbon", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Datum")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Naam")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Werkbon");
                 });
 
             modelBuilder.Entity("WerkbonAppTest3.Models.Klant", b =>

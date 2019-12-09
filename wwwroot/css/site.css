@@ -73,3 +73,22 @@ body {
 .euro{
     display:inline;
 }
+
+.column{
+    float:left;
+    width:50%;
+    padding:10px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 1000px) {
+    .column {
+        width: 100%;
+    }
+}
+* {
+    box-sizing: border-box;
+}

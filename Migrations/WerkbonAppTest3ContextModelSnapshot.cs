@@ -229,6 +229,24 @@ namespace WerkbonAppTest3.Migrations
                     b.ToTable("Verhuiswagen");
                 });
 
+            modelBuilder.Entity("WerkbonAppTest3.Models.Werkbon", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Datum")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Naam")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Werkbon");
+                });
+
             modelBuilder.Entity("WerkbonAppTest3.Models.Klant", b =>
                 {
                     b.HasOne("WerkbonAppTest3.Models.Rekening", "Rekening")

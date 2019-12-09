@@ -305,8 +305,9 @@ C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Laadadressen\Details.cshtml.g.cs
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Laadadressen\Edit.cshtml.g.cs
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Laadadressen\Index.cshtml.g.cs
-C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Losadressen\Create.cshtml.g.cs
-C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Losadressen\Delete.cshtml.g.cs
-C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Losadressen\Details.cshtml.g.cs
-C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Losadressen\Edit.cshtml.g.cs
-C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Losadressen\Index.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonnen\Create.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonnen\Delete.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonnen\Details.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonnen\Edit.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonnen\Index.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbon.cshtml.g.cs
