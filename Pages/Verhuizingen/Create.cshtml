@@ -1,0 +1,268 @@
+﻿@page
+@model WerkbonApplicatie.Pages.Verhuizingen.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Verhuizing</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.KlantID" class="control-label"></label>
+                <select asp-for="Verhuizing.KlantID" class ="form-control" asp-items="ViewBag.KlantID"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Datum" class="control-label"></label>
+                <input asp-for="Verhuizing.Datum" class="form-control" />
+                <span asp-validation-for="Verhuizing.Datum" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Inpakken" /> @Html.DisplayNameFor(model => model.Verhuizing.Inpakken)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Uitpakken" /> @Html.DisplayNameFor(model => model.Verhuizing.Uitpakken)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Montage" /> @Html.DisplayNameFor(model => model.Verhuizing.Montage)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Demontage" /> @Html.DisplayNameFor(model => model.Verhuizing.Demontage)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Laden" /> @Html.DisplayNameFor(model => model.Verhuizing.Laden)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Lossen" /> @Html.DisplayNameFor(model => model.Verhuizing.Lossen)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Ophangen_Lamp" /> @Html.DisplayNameFor(model => model.Verhuizing.Ophangen_Lamp)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Afhalen_Lamp" /> @Html.DisplayNameFor(model => model.Verhuizing.Afhalen_Lamp)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Aansluiten_Witgoed" /> @Html.DisplayNameFor(model => model.Verhuizing.Aansluiten_Witgoed)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Afsluiten_Witgoed" /> @Html.DisplayNameFor(model => model.Verhuizing.Afsluiten_Witgoed)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Intern_Transport" /> @Html.DisplayNameFor(model => model.Verhuizing.Intern_Transport)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Schade_Veroorzaakt" /> @Html.DisplayNameFor(model => model.Verhuizing.Schade_Veroorzaakt)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Schade_Besproken" /> @Html.DisplayNameFor(model => model.Verhuizing.Schade_Besproken)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Schade_Beschrijving" class="control-label"></label>
+                <input asp-for="Verhuizing.Schade_Beschrijving" class="form-control" />
+                <span asp-validation-for="Verhuizing.Schade_Beschrijving" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Kenteken" class="control-label"></label>
+                <input asp-for="Verhuizing.Kenteken" class="form-control" />
+                <span asp-validation-for="Verhuizing.Kenteken" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Aanvangstijd" class="control-label"></label>
+                <input asp-for="Verhuizing.Aanvangstijd" class="form-control" />
+                <span asp-validation-for="Verhuizing.Aanvangstijd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Volume" class="control-label"></label>
+                <input asp-for="Verhuizing.Volume" class="form-control" />
+                <span asp-validation-for="Verhuizing.Volume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Merk_Kraan" class="control-label"></label>
+                <input asp-for="Verhuizing.Merk_Kraan" class="form-control" />
+                <span asp-validation-for="Verhuizing.Merk_Kraan" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Traploper" /> @Html.DisplayNameFor(model => model.Verhuizing.Traploper)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Rolsteiger" /> @Html.DisplayNameFor(model => model.Verhuizing.Rolsteiger)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Drempelplaat" /> @Html.DisplayNameFor(model => model.Verhuizing.Drempelplaat)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Groot_Volume_Bak" /> @Html.DisplayNameFor(model => model.Verhuizing.Groot_Volume_Bak)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Wasmachinebeugel" /> @Html.DisplayNameFor(model => model.Verhuizing.Wasmachinebeugel)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Noppenfolie" /> @Html.DisplayNameFor(model => model.Verhuizing.Noppenfolie)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Eenpersoons_Matrashoes" /> @Html.DisplayNameFor(model => model.Verhuizing.Eenpersoons_Matrashoes)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Tweepersoons_Matrashoes" /> @Html.DisplayNameFor(model => model.Verhuizing.Tweepersoons_Matrashoes)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Barrel" /> @Html.DisplayNameFor(model => model.Verhuizing.Barrel)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Verhuizing.Handymankoffers" /> @Html.DisplayNameFor(model => model.Verhuizing.Handymankoffers)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Extra_Materiaal" class="control-label"></label>
+                <input asp-for="Verhuizing.Extra_Materiaal" class="form-control" />
+                <span asp-validation-for="Verhuizing.Extra_Materiaal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Vertrekuur_Zaak" class="control-label"></label>
+                <input asp-for="Verhuizing.Vertrekuur_Zaak" class="form-control" />
+                <span asp-validation-for="Verhuizing.Vertrekuur_Zaak" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Inpakken_Manuren" class="control-label"></label>
+                <input asp-for="Verhuizing.Inpakken_Manuren" class="form-control" />
+                <span asp-validation-for="Verhuizing.Inpakken_Manuren" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Uitpakken_Manuren" class="control-label"></label>
+                <input asp-for="Verhuizing.Uitpakken_Manuren" class="form-control" />
+                <span asp-validation-for="Verhuizing.Uitpakken_Manuren" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Montage_Manuren" class="control-label"></label>
+                <input asp-for="Verhuizing.Montage_Manuren" class="form-control" />
+                <span asp-validation-for="Verhuizing.Montage_Manuren" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Demontage_Manuren" class="control-label"></label>
+                <input asp-for="Verhuizing.Demontage_Manuren" class="form-control" />
+                <span asp-validation-for="Verhuizing.Demontage_Manuren" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Aantal_Geladen" class="control-label"></label>
+                <input asp-for="Verhuizing.Aantal_Geladen" class="form-control" />
+                <span asp-validation-for="Verhuizing.Aantal_Geladen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Starttijd_Laden" class="control-label"></label>
+                <input asp-for="Verhuizing.Starttijd_Laden" class="form-control" />
+                <span asp-validation-for="Verhuizing.Starttijd_Laden" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Eindtijd_Laden" class="control-label"></label>
+                <input asp-for="Verhuizing.Eindtijd_Laden" class="form-control" />
+                <span asp-validation-for="Verhuizing.Eindtijd_Laden" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Laaduur_Totaal" class="control-label"></label>
+                <input asp-for="Verhuizing.Laaduur_Totaal" class="form-control" />
+                <span asp-validation-for="Verhuizing.Laaduur_Totaal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Aantal_Gelost" class="control-label"></label>
+                <input asp-for="Verhuizing.Aantal_Gelost" class="form-control" />
+                <span asp-validation-for="Verhuizing.Aantal_Gelost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Starttijd_Lossen" class="control-label"></label>
+                <input asp-for="Verhuizing.Starttijd_Lossen" class="form-control" />
+                <span asp-validation-for="Verhuizing.Starttijd_Lossen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Eindtijd_Lossen" class="control-label"></label>
+                <input asp-for="Verhuizing.Eindtijd_Lossen" class="form-control" />
+                <span asp-validation-for="Verhuizing.Eindtijd_Lossen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Losuur_Totaal" class="control-label"></label>
+                <input asp-for="Verhuizing.Losuur_Totaal" class="form-control" />
+                <span asp-validation-for="Verhuizing.Losuur_Totaal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Aankomsttijd_Zaak" class="control-label"></label>
+                <input asp-for="Verhuizing.Aankomsttijd_Zaak" class="form-control" />
+                <span asp-validation-for="Verhuizing.Aankomsttijd_Zaak" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Betaling" class="control-label"></label>
+                <input asp-for="Verhuizing.Betaling" class="form-control" />
+                <span asp-validation-for="Verhuizing.Betaling" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.Betaalwijze" class="control-label"></label>
+                <input asp-for="Verhuizing.Betaalwijze" class="form-control" />
+                <span asp-validation-for="Verhuizing.Betaalwijze" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.KostenPlaats" class="control-label"></label>
+                <input asp-for="Verhuizing.KostenPlaats" class="form-control" />
+                <span asp-validation-for="Verhuizing.KostenPlaats" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
