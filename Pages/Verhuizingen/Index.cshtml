@@ -1,0 +1,318 @@
+﻿@page
+@model WerkbonApplicatie.Pages.Verhuizingen.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Datum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Inpakken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Uitpakken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Montage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Demontage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Laden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Lossen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Ophangen_Lamp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Afhalen_Lamp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Aansluiten_Witgoed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Afsluiten_Witgoed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Intern_Transport)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Schade_Veroorzaakt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Schade_Besproken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Schade_Beschrijving)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Kenteken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Aanvangstijd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Volume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Merk_Kraan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Traploper)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Rolsteiger)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Drempelplaat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Groot_Volume_Bak)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Wasmachinebeugel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Noppenfolie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Eenpersoons_Matrashoes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Tweepersoons_Matrashoes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Barrel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Handymankoffers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Extra_Materiaal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Vertrekuur_Zaak)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Inpakken_Manuren)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Uitpakken_Manuren)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Montage_Manuren)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Demontage_Manuren)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Aantal_Geladen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Starttijd_Laden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Eindtijd_Laden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Laaduur_Totaal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Aantal_Gelost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Starttijd_Lossen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Eindtijd_Lossen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Losuur_Totaal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Aankomsttijd_Zaak)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Betaling)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Betaalwijze)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].KostenPlaats)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing[0].Klant)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Verhuizing) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Datum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Inpakken)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Uitpakken)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Montage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Demontage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Laden)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lossen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ophangen_Lamp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Afhalen_Lamp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aansluiten_Witgoed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Afsluiten_Witgoed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Intern_Transport)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Schade_Veroorzaakt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Schade_Besproken)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Schade_Beschrijving)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kenteken)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aanvangstijd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Volume)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Merk_Kraan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Traploper)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rolsteiger)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Drempelplaat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Groot_Volume_Bak)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Wasmachinebeugel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Noppenfolie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eenpersoons_Matrashoes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tweepersoons_Matrashoes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Barrel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Handymankoffers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extra_Materiaal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vertrekuur_Zaak)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Inpakken_Manuren)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Uitpakken_Manuren)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Montage_Manuren)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Demontage_Manuren)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aantal_Geladen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Starttijd_Laden)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eindtijd_Laden)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Laaduur_Totaal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aantal_Gelost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Starttijd_Lossen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eindtijd_Lossen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Losuur_Totaal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aankomsttijd_Zaak)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Betaling)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Betaalwijze)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KostenPlaats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Klant.Klant_Naam)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.VerhuizingID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.VerhuizingID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.VerhuizingID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

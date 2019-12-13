@@ -8129,11 +8129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joost\\source\\repos\\WerkbonApplicatie\\WerkbonApplicatie.csproj",
+      "projectUniqueName": "C:\\Users\\joost\\OneDrive\\Documenten\\Visual Studio projecten\\WerkbonApp\\WerkbonApplicatie.csproj",
       "projectName": "WerkbonApplicatie",
-      "projectPath": "C:\\Users\\joost\\source\\repos\\WerkbonApplicatie\\WerkbonApplicatie.csproj",
+      "projectPath": "C:\\Users\\joost\\OneDrive\\Documenten\\Visual Studio projecten\\WerkbonApp\\WerkbonApplicatie.csproj",
       "packagesPath": "C:\\Users\\joost\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joost\\source\\repos\\WerkbonApplicatie\\obj\\",
+      "outputPath": "C:\\Users\\joost\\OneDrive\\Documenten\\Visual Studio projecten\\WerkbonApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joost\\AppData\\Roaming\\NuGet\\NuGet.Config",

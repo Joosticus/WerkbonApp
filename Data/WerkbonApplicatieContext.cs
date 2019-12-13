@@ -15,5 +15,7 @@ namespace WerkbonApplicatie.Data
         }
 
         public DbSet<WerkbonApplicatie.Models.Klant> Klant { get; set; }
+
+        public DbSet<WerkbonApplicatie.Models.Verhuizing> Verhuizing { get; set; }
     }
 }
