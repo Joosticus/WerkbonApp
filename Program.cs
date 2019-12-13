@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace WerkbonAppTest3
+namespace WerkbonApplicatie
 {
     public class Program
     {

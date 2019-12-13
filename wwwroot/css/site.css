@@ -5,7 +5,6 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
-  font-size:medium;
 }
 
 /* Provide sufficient contrast against white background */
@@ -69,26 +68,4 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
-}
-.euro{
-    display:inline;
-}
-
-.column{
-    float:left;
-    width:50%;
-    padding:10px;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-@media screen and (max-width: 1000px) {
-    .column {
-        width: 100%;
-    }
-}
-* {
-    box-sizing: border-box;
 }
