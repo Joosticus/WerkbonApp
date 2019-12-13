@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using WerkbonAppTest3.Data;
-using WerkbonAppTest3.Models;
+using WerkbonApplicatie.Data;
+using WerkbonApplicatie.Models;
 
-namespace WerkbonAppTest3.Pages.Klanten
+namespace WerkbonApplicatie.Pages.Klanten
 {
     public class EditModel : PageModel
     {
-        private readonly WerkbonAppTest3.Data.WerkbonAppTest3Context _context;
+        private readonly WerkbonApplicatie.Data.WerkbonApplicatieContext _context;
 
-        public EditModel(WerkbonAppTest3.Data.WerkbonAppTest3Context context)
+        public EditModel(WerkbonApplicatie.Data.WerkbonApplicatieContext context)
         {
             _context = context;
         }
@@ -30,14 +30,12 @@ namespace WerkbonAppTest3.Pages.Klanten
                 return NotFound();
             }
 
-            Klant = await _context.Klant
-                .Include(k => k.Rekening).FirstOrDefaultAsync(m => m.ID == id);
+            Klant = await _context.Klant.FirstOrDefaultAsync(m => m.KlantID == id);
 
             if (Klant == null)
             {
                 return NotFound();
             }
-           ViewData["RekeningID"] = new SelectList(_context.Rekening, "ID", "ID");
             return Page();
         }
 
@@ -58,7 +56,7 @@ namespace WerkbonAppTest3.Pages.Klanten
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!KlantExists(Klant.ID))
+                if (!KlantExists(Klant.KlantID))
                 {
                     return NotFound();
                 }
@@ -73,7 +71,7 @@ namespace WerkbonAppTest3.Pages.Klanten
 
         private bool KlantExists(int id)
         {
-            return _context.Klant.Any(e => e.ID == id);
+            return _context.Klant.Any(e => e.KlantID == id);
         }
     }
 }

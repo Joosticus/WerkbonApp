@@ -5,23 +5,22 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using WerkbonAppTest3.Data;
-using WerkbonAppTest3.Models;
+using WerkbonApplicatie.Data;
+using WerkbonApplicatie.Models;
 
-namespace WerkbonAppTest3.Pages.Klanten
+namespace WerkbonApplicatie.Pages.Klanten
 {
     public class CreateModel : PageModel
     {
-        private readonly WerkbonAppTest3.Data.WerkbonAppTest3Context _context;
+        private readonly WerkbonApplicatie.Data.WerkbonApplicatieContext _context;
 
-        public CreateModel(WerkbonAppTest3.Data.WerkbonAppTest3Context context)
+        public CreateModel(WerkbonApplicatie.Data.WerkbonApplicatieContext context)
         {
             _context = context;
         }
 
         public IActionResult OnGet()
         {
-        ViewData["RekeningID"] = new SelectList(_context.Rekening, "ID", "ID");
             return Page();
         }
 

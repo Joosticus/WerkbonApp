@@ -9,9 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using WerkbonAppTest3.Data;
+using WerkbonApplicatie.Data;
 
-namespace WerkbonAppTest3
+namespace WerkbonApplicatie
 {
     public class Startup
     {
@@ -27,8 +27,8 @@ namespace WerkbonAppTest3
         {
             services.AddRazorPages();
 
-            services.AddDbContext<WerkbonAppTest3Context>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("WerkbonAppTest3Context")));
+            services.AddDbContext<WerkbonApplicatieContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("WerkbonApplicatieContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,5 +1,5 @@
 ﻿@page
-@model WerkbonAppTest3.Pages.Klanten.CreateModel
+@model WerkbonApplicatie.Pages.Klanten.CreateModel
 
 @{
     ViewData["Title"] = "Create";
@@ -14,23 +14,24 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Klant.RekeningID" class="control-label"></label>
-                <select asp-for="Klant.RekeningID" class ="form-control" asp-items="ViewBag.RekeningID"></select>
+                <label asp-for="Klant.Klant_Naam" class="control-label"></label>
+                <input asp-for="Klant.Klant_Naam" class="form-control" />
+                <span asp-validation-for="Klant.Klant_Naam" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Klant.Naam" class="control-label"></label>
-                <input asp-for="Klant.Naam" class="form-control" />
-                <span asp-validation-for="Klant.Naam" class="text-danger"></span>
+                <label asp-for="Klant.Voornaam" class="control-label"></label>
+                <input asp-for="Klant.Voornaam" class="form-control" />
+                <span asp-validation-for="Klant.Voornaam" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Klant.Datum" class="control-label"></label>
-                <input asp-for="Klant.Datum" class="form-control" />
-                <span asp-validation-for="Klant.Datum" class="text-danger"></span>
+                <label asp-for="Klant.Achternaam" class="control-label"></label>
+                <input asp-for="Klant.Achternaam" class="form-control" />
+                <span asp-validation-for="Klant.Achternaam" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Klant.Contactpersoon" class="control-label"></label>
-                <input asp-for="Klant.Contactpersoon" class="form-control" />
-                <span asp-validation-for="Klant.Contactpersoon" class="text-danger"></span>
+                <label asp-for="Klant.Telefoonnummer" class="control-label"></label>
+                <input asp-for="Klant.Telefoonnummer" class="form-control" />
+                <span asp-validation-for="Klant.Telefoonnummer" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

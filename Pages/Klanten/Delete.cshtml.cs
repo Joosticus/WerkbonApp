@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using WerkbonAppTest3.Data;
-using WerkbonAppTest3.Models;
+using WerkbonApplicatie.Data;
+using WerkbonApplicatie.Models;
 
-namespace WerkbonAppTest3.Pages.Klanten
+namespace WerkbonApplicatie.Pages.Klanten
 {
     public class DeleteModel : PageModel
     {
-        private readonly WerkbonAppTest3.Data.WerkbonAppTest3Context _context;
+        private readonly WerkbonApplicatie.Data.WerkbonApplicatieContext _context;
 
-        public DeleteModel(WerkbonAppTest3.Data.WerkbonAppTest3Context context)
+        public DeleteModel(WerkbonApplicatie.Data.WerkbonApplicatieContext context)
         {
             _context = context;
         }
@@ -29,8 +29,7 @@ namespace WerkbonAppTest3.Pages.Klanten
                 return NotFound();
             }
 
-            Klant = await _context.Klant
-                .Include(k => k.Rekening).FirstOrDefaultAsync(m => m.ID == id);
+            Klant = await _context.Klant.FirstOrDefaultAsync(m => m.KlantID == id);
 
             if (Klant == null)
             {

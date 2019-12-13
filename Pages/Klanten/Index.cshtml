@@ -1,5 +1,5 @@
 ﻿@page
-@model WerkbonAppTest3.Pages.Klanten.IndexModel
+@model WerkbonApplicatie.Pages.Klanten.IndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -14,16 +14,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Klant[0].Naam)
+                @Html.DisplayNameFor(model => model.Klant[0].Klant_Naam)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Klant[0].Datum)
+                @Html.DisplayNameFor(model => model.Klant[0].Voornaam)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Klant[0].Contactpersoon)
+                @Html.DisplayNameFor(model => model.Klant[0].Achternaam)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Klant[0].Rekening)
+                @Html.DisplayNameFor(model => model.Klant[0].Telefoonnummer)
             </th>
             <th></th>
         </tr>
@@ -32,21 +32,21 @@
 @foreach (var item in Model.Klant) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Naam)
+                @Html.DisplayFor(modelItem => item.Klant_Naam)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Datum)
+                @Html.DisplayFor(modelItem => item.Voornaam)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Contactpersoon)
+                @Html.DisplayFor(modelItem => item.Achternaam)
             </td>
             <td>
-                <p class="euro">€</p>@Html.DisplayFor(modelItem => item.Rekening.Bedrag)
+                @Html.DisplayFor(modelItem => item.Telefoonnummer)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.KlantID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.KlantID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.KlantID">Delete</a>
             </td>
         </tr>
 }

@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using WerkbonAppTest3.Data;
-using WerkbonAppTest3.Models;
+using WerkbonApplicatie.Data;
+using WerkbonApplicatie.Models;
 
-namespace WerkbonAppTest3.Pages.Klanten
+namespace WerkbonApplicatie.Pages.Klanten
 {
     public class IndexModel : PageModel
     {
-        private readonly WerkbonAppTest3.Data.WerkbonAppTest3Context _context;
+        private readonly WerkbonApplicatie.Data.WerkbonApplicatieContext _context;
 
-        public IndexModel(WerkbonAppTest3.Data.WerkbonAppTest3Context context)
+        public IndexModel(WerkbonApplicatie.Data.WerkbonApplicatieContext context)
         {
             _context = context;
         }
@@ -23,8 +23,7 @@ namespace WerkbonAppTest3.Pages.Klanten
 
         public async Task OnGetAsync()
         {
-            Klant = await _context.Klant
-                .Include(k => k.Rekening).ToListAsync();
+            Klant = await _context.Klant.ToListAsync();
         }
     }
 }
