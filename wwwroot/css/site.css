@@ -114,3 +114,31 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
     color: #525c65;
     transition: color 0.3s ease;
 }
+
+.green {
+    background-color: #00ab90;
+    color: white;
+}
+
+.green:hover {
+    background-color: #04a289;
+    color: white;
+}
+
+.border-green {
+    border-color: #00ab90 !important;
+}
+
+.green-outline {
+    border-color: #00ab90;
+    color: #00ab90;
+}
+
+    .green-outline:hover {
+        background-color: #00ab90;
+        color: #ffffff;
+    }
+
+.shadow {
+    box-shadow: 3px 4px 7px 1px #dadada
+}
