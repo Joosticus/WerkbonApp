@@ -117,7 +117,7 @@ namespace WerkbonApplicatie.Models
         [Display(Name = "Aankomsttijd zaak")]
         [DataType(DataType.Time)]
         public DateTime Aankomsttijd_Zaak { get; set; }
-
+        [Display(Name ="Bedrag")]
         public int Betaling { get; set; }
         public string Betaalwijze { get; set; }
         [Display(Name ="Kostenplaats")]
