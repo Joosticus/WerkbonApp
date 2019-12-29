@@ -2,10 +2,10 @@
 @model WerkbonApplicatie.EditModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Bijwerken";
 }
 
-<h1>Edit</h1>
+<h1>Bijwerken</h1>
 
 <h4>Personeel</h4>
 <hr />
@@ -15,9 +15,9 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Personeel.PersoneelID" />
             <div class="form-group">
-                <label asp-for="Personeel.Pesoneel_VoorNaam" class="control-label"></label>
-                <input asp-for="Personeel.Pesoneel_VoorNaam" class="form-control" />
-                <span asp-validation-for="Personeel.Pesoneel_VoorNaam" class="text-danger"></span>
+                <label asp-for="Personeel.Personeel_Voornaam" class="control-label"></label>
+                <input asp-for="Personeel.Personeel_Voornaam" class="form-control" />
+                <span asp-validation-for="Personeel.Personeel_Voornaam" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Personeel.Personeel_Achternaam" class="control-label"></label>
@@ -26,7 +26,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Personeel.Password" class="control-label"></label>
-                <input asp-for="Personeel.Password" class="form-control" />
+                <input asp-for="Personeel.Password" class="form-control"/>
                 <span asp-validation-for="Personeel.Password" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -40,14 +40,14 @@
                 <span asp-validation-for="Personeel.Username" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Opslaan" class="btn green" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Index">Terug naar overzicht</a>
 </div>
 
 @section Scripts {

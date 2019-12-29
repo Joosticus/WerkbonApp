@@ -43,6 +43,33 @@ namespace WerkbonApplicatie.Migrations
                     b.ToTable("Klant");
                 });
 
+            modelBuilder.Entity("WerkbonApplicatie.Models.Personeel", b =>
+                {
+                    b.Property<int>("PersoneelID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Functie")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Personeel_Achternaam")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Personeel_Voornaam")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PersoneelID");
+
+                    b.ToTable("Personeel");
+                });
+
             modelBuilder.Entity("WerkbonApplicatie.Models.Verhuizing", b =>
                 {
                     b.Property<int>("VerhuizingID")
