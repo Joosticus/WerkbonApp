@@ -2,12 +2,12 @@
 @model WerkbonApplicatie.Pages.Klanten.DeleteModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Verwijderen";
 }
 
-<h1>Delete</h1>
+<h1>Verwijderen</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>U staat op het punt om een klant te verwijderen</h3>
 <div>
     <h4>Klant</h4>
     <hr />
@@ -40,7 +40,7 @@
     
     <form method="post">
         <input type="hidden" asp-for="Klant.KlantID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
+        <input type="submit" value="Verwijderen" class="btn btn-danger" /> |
+        <a asp-page="./Index">Terug naar overzicht</a>
     </form>
 </div>

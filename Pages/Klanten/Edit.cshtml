@@ -2,10 +2,10 @@
 @model WerkbonApplicatie.Pages.Klanten.EditModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Bijwerken";
 }
 
-<h1>Edit</h1>
+<h1>Bijwerken</h1>
 
 <h4>Klant</h4>
 <hr />
@@ -35,14 +35,14 @@
                 <span asp-validation-for="Klant.Telefoonnummer" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Opslaan" class="btn green" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Index">Terug naar overzicht</a>
 </div>
 
 @section Scripts {
