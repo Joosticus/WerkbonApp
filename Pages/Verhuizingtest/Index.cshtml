@@ -1,0 +1,42 @@
+﻿@page
+@model WerkbonApplicatie.Pages.Verhuizingtest.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing_Personeel[0].personeel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Verhuizing_Personeel[0].verhuizing)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Verhuizing_Personeel) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.personeel.PersoneelID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.verhuizing.VerhuizingID)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

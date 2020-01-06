@@ -265,3 +265,13 @@ C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Verhuizingen\Details.cshtml.g.cs
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Verhuizingen\Edit.cshtml.g.cs
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Verhuizingen\Index.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Personeels\Create.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Personeels\Delete.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Personeels\Details.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Personeels\Edit.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Personeels\Index.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Verhuizingtest\Create.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Verhuizingtest\Delete.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Verhuizingtest\Details.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Verhuizingtest\Edit.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Verhuizingtest\Index.cshtml.g.cs

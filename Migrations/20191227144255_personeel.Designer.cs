@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WerkbonApplicatie.Data;
 
 namespace WerkbonApplicatie.Migrations
 {
     [DbContext(typeof(WerkbonApplicatieContext))]
-    partial class WerkbonApplicatieContextModelSnapshot : ModelSnapshot
+    [Migration("20191227144255_personeel")]
+    partial class personeel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -228,41 +230,11 @@ namespace WerkbonApplicatie.Migrations
                     b.ToTable("Verhuizing");
                 });
 
-            modelBuilder.Entity("WerkbonApplicatie.Models.Verhuizing_Personeel", b =>
-                {
-                    b.Property<int>("PersoneelID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("VerhuizingID")
-                        .HasColumnType("int");
-
-                    b.HasKey("PersoneelID", "VerhuizingID");
-
-                    b.HasIndex("VerhuizingID");
-
-                    b.ToTable("Verhuizing_Personeel");
-                });
-
             modelBuilder.Entity("WerkbonApplicatie.Models.Verhuizing", b =>
                 {
                     b.HasOne("WerkbonApplicatie.Models.Klant", "Klant")
                         .WithMany()
                         .HasForeignKey("KlantID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("WerkbonApplicatie.Models.Verhuizing_Personeel", b =>
-                {
-                    b.HasOne("WerkbonApplicatie.Models.Personeel", "personeel")
-                        .WithMany()
-                        .HasForeignKey("PersoneelID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WerkbonApplicatie.Models.Verhuizing", "verhuizing")
-                        .WithMany()
-                        .HasForeignKey("VerhuizingID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
