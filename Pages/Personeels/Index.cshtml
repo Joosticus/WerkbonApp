@@ -1,0 +1,60 @@
+﻿@page
+@model WerkbonApplicatie.Pages.Personeels.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Personeel[0].Pesoneel_VoorNaam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Personeel[0].Personeel_Achternaam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Personeel[0].Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Personeel[0].Functie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Personeel[0].Username)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Personeel) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pesoneel_VoorNaam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Personeel_Achternaam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Functie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PersoneelID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PersoneelID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PersoneelID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

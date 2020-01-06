@@ -9,7 +9,7 @@ namespace WerkbonApplicatie.Models
     public class Personeel
     {   
         public int PersoneelID { get; set; }
-        [Display(Name = "naam")]
+        [Display(Name = "Naam")]
         public string Pesoneel_VoorNaam { get; set; }
         public string Personeel_Achternaam { get; set; }
         public string Password { get; set; }
