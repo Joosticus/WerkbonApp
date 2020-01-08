@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\joost\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\joost\\.nuget\\packages"
+      "C:\\Users\\Inspi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Inspi\\.nuget\\packages"
     ]
   }
 }
