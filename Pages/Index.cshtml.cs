@@ -7,20 +7,26 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using WerkbonApplicatie.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+
 namespace WerkbonApplicatie.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+    
+        private readonly WerkbonApplicatie.Data.WerkbonApplicatieContext _context;
 
-        public IndexModel(ILogger<IndexModel> logger)
-        { _logger = logger; }
+        public IndexModel(WerkbonApplicatie.Data.WerkbonApplicatieContext context)
+        {
+            _context = context;
+        }
 
-        [BindProperty]
-        public Personeel Personeel { get; set; }
-        [BindProperty]
-        public Klant Klant { get; set; }
+        public IList<Personeel> Personeel { get; set; }
 
+        public async Task OnGetAsync()
+        {
+            Personeel = await _context.Personeel.ToListAsync();
+        }
 
     }
 }
