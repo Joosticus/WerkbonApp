@@ -2,11 +2,11 @@
 @model WerkbonApplicatie.Pages.Verhuizingen.CreateModel
 
 @{
+
     ViewData["Title"] = "Create";
 }
 
 <h1>Create</h1>
-
 <h4>Verhuizing</h4>
 <hr />
 <form method="post">
@@ -19,9 +19,29 @@
                 <span asp-validation-for="Verhuizing.Datum" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Verhuizing.KlantID" class="control-label"></label>
-                <select asp-for="Verhuizing.KlantID" class="form-control" asp-items="ViewBag.KlantID"></select>
+                <label asp-for="Klant.Klant_Naam" class="control-label"></label>
+                <input asp-for="Klant.Klant_Naam" class="form-control" />
+                <span asp-validation-for="Klant.Klant_Naam" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="Klant.Voornaam" class="control-label"></label>
+                <input asp-for="Klant.Voornaam" class="form-control" />
+                <span asp-validation-for="Klant.Voornaam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Klant.Achternaam" class="control-label"></label>
+                <input asp-for="Klant.Achternaam" class="form-control" />
+                <span asp-validation-for="Klant.Achternaam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Klant.Telefoonnummer" class="control-label"></label>
+                <input asp-for="Klant.Telefoonnummer" class="form-control" />
+                <span asp-validation-for="Klant.Telefoonnummer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Verhuizing.KlantID" class="control-label"></label>
+            </div>
+
         </div>
 
         <div class="column">
@@ -101,48 +121,42 @@
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Verhuizing.Traploper" /> @Html.DisplayNameFor(model => model.Verhuizing.Traploper)
                 </label>
-            </div>
-            <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Verhuizing.Rolsteiger" /> @Html.DisplayNameFor(model => model.Verhuizing.Rolsteiger)
                 </label>
             </div>
+
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Verhuizing.Drempelplaat" /> @Html.DisplayNameFor(model => model.Verhuizing.Drempelplaat)
                 </label>
-            </div>
-            <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Verhuizing.Groot_Volume_Bak" /> @Html.DisplayNameFor(model => model.Verhuizing.Groot_Volume_Bak)
                 </label>
             </div>
+
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Verhuizing.Wasmachinebeugel" /> @Html.DisplayNameFor(model => model.Verhuizing.Wasmachinebeugel)
                 </label>
-            </div>
-            <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Verhuizing.Noppenfolie" /> @Html.DisplayNameFor(model => model.Verhuizing.Noppenfolie)
                 </label>
             </div>
+
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Verhuizing.Eenpersoons_Matrashoes" /> @Html.DisplayNameFor(model => model.Verhuizing.Eenpersoons_Matrashoes)
                 </label>
-            </div>
-            <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Verhuizing.Tweepersoons_Matrashoes" /> @Html.DisplayNameFor(model => model.Verhuizing.Tweepersoons_Matrashoes)
                 </label>
             </div>
+
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Verhuizing.Barrel" /> @Html.DisplayNameFor(model => model.Verhuizing.Barrel)
                 </label>
-            </div>
-            <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Verhuizing.Handymankoffers" /> @Html.DisplayNameFor(model => model.Verhuizing.Handymankoffers)
                 </label>
@@ -257,6 +271,7 @@
                 <input asp-for="Verhuizing.Schade_Beschrijving" class="form-control" />
                 <span asp-validation-for="Verhuizing.Schade_Beschrijving" class="text-danger"></span>
             </div>
+
         </div>
         <div class="form-group">
             <input type="submit" value="Create" class="btn btn-primary" />

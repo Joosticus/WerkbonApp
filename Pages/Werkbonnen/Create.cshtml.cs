@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using WerkbonApplicatie.Data;
 using WerkbonApplicatie.Models;
 
-namespace WerkbonApplicatie.Pages.Verhuizingen
+namespace WerkbonApplicatie.Pages.Werkbonnen
 {
     public class CreateModel : PageModel
     {
@@ -21,16 +21,14 @@ namespace WerkbonApplicatie.Pages.Verhuizingen
 
         public IActionResult OnGet()
         {
-        ViewData["KlantID"] = new SelectList(_context.Klant, "KlantID", "KlantID");
             return Page();
         }
 
-        
         [BindProperty]
-        public Verhuizing Verhuizing { get; set; }
-        [BindProperty]
-        public Klant Klant { get; set; }
-        
+        public Werkbon Werkbon { get; set; }
+
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -38,9 +36,7 @@ namespace WerkbonApplicatie.Pages.Verhuizingen
                 return Page();
             }
 
-
-            _context.Verhuizing.Add(Verhuizing);
-            _context.Klant.Add(Klant);
+            _context.Werkbon.Add(Werkbon);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

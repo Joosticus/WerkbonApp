@@ -26,5 +26,7 @@ namespace WerkbonApplicatie.Data
             modelBuilder.Entity<Verhuizing_Personeel>()
                 .HasKey(o => new { o.PersoneelID, o.VerhuizingID });
         }
+        public DbSet<WerkbonApplicatie.Models.Adres> Adres { get; set; }
+        public DbSet<WerkbonApplicatie.Models.Werkbon> Werkbon { get; set; }
     }
 }
