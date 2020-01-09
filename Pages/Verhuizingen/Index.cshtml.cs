@@ -40,5 +40,20 @@ namespace WerkbonApplicatie.Pages.Verhuizingen
 
             Verhuizing = await verhuizingen.ToListAsync();
         }
+        [BindProperty]
+        public Klant Klant { get; set; }
+
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            _context.Klant.Add(Klant);
+            await _context.SaveChangesAsync();
+
+            return RedirectToPage("./Create");
+        }
     }
 }

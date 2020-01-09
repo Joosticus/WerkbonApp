@@ -18,7 +18,7 @@ namespace WerkbonApplicatie.Pages.Klanten
         {
             _context = context;
         }
-
+        
         public IActionResult OnGet()
         {
             return Page();

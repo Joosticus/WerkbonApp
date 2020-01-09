@@ -21,15 +21,16 @@ namespace WerkbonApplicatie.Pages.Verhuizingen
 
         public IActionResult OnGet()
         {
-        ViewData["KlantID"] = new SelectList(_context.Klant, "KlantID", "Klant_Naam");
+        ViewData["KlantID"] = new SelectList(_context.Klant, "KlantID", "KlantID");
             return Page();
         }
 
+        
         [BindProperty]
         public Verhuizing Verhuizing { get; set; }
-
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        [BindProperty]
+        public Klant Klant { get; set; }
+        
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -37,7 +38,9 @@ namespace WerkbonApplicatie.Pages.Verhuizingen
                 return Page();
             }
 
+
             _context.Verhuizing.Add(Verhuizing);
+            _context.Klant.Add(Klant);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
