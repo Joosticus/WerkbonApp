@@ -21,9 +21,22 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
 
         public IList<Werkbon> Werkbon { get;set; }
 
+        [BindProperty(SupportsGet = true)]
+        public string SearchString { get; set; }
         public async Task OnGetAsync()
         {
-            Werkbon = await _context.Werkbon.ToListAsync();
+            // Get all werbonnen
+            var werkbonnen = from m in _context.Werkbon
+                               select m;
+
+            // If searchstring is not empty do function
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                // Search where searchstring is klantnaam, bedrag or datum
+                werkbonnen = werkbonnen.Where(s => s.Klant_Naam.Contains(SearchString) || s.Bedrag.ToString().Contains(SearchString) || s.Datum.ToString().Contains(SearchString));
+            }
+
+            Werkbon = await werkbonnen.ToListAsync();
         }
     }
 }
