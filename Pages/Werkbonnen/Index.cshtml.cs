@@ -33,7 +33,7 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
             if (!string.IsNullOrEmpty(SearchString))
             {
                 // Search where searchstring is klantnaam, bedrag or datum
-                werkbonnen = werkbonnen.Where(s => s.Klant_Naam.Contains(SearchString) || s.Bedrag.ToString().Contains(SearchString) || s.Datum.ToString().Contains(SearchString));
+                werkbonnen = werkbonnen.Where(s => s.Klant_Naam.Contains(SearchString) || s.Telefoonnummer.ToString().Contains(SearchString) || s.Datum.ToString().Contains(SearchString));
             }
 
             Werkbon = await werkbonnen.ToListAsync();

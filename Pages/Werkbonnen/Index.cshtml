@@ -15,7 +15,7 @@
     </li>
     <li class="nav-item">
         <form class="form-inline">
-            <input class="form-control" type="search" asp-for="SearchString" placeholder="Klant, bedrag, datum">
+            <input class="form-control" type="search" asp-for="SearchString" placeholder="Klant, telefoonnummer, datum">
             <button class="btn green" type="submit">Zoeken</button>
         </form>
     </li>
@@ -29,9 +29,9 @@
                 <div class="card-header text-white green"> #@Html.DisplayFor(modelItem => item.WerkbonID) -  @Html.DisplayFor(modelItem => item.Klant_Naam)</div>
                 <div class="card-body">
                     <h6 class="card-subtitle mb-2 text-muted"> @Html.DisplayFor(modelItem => item.Datum) @Html.DisplayFor(modelItem => item.Aanvangstijd)</h6>
-                    <p class="card-text">Naam: @Html.DisplayFor(modelItem => item.Voornaam) @Html.DisplayFor(modelItem => item.Achternaam) <br />Telefoon: @Html.DisplayFor(modelItem => item.Telefoonnummer) <br /> Bedrag: € @Html.DisplayFor(modelItem => item.Bedrag)<p>
+                    <p class="card-text">Naam: @Html.DisplayFor(modelItem => item.Voornaam) @Html.DisplayFor(modelItem => item.Achternaam) <br />Telefoon: @Html.DisplayFor(modelItem => item.Telefoonnummer) <br /> Bedrag: @Html.DisplayFor(modelItem => item.Bedrag)<p>
                         <hr />
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="btn-group flex-wrap" role="group">
                             <a asp-page="./Details" asp-route-id="@item.WerkbonID" class="btn green-outline btn-sm">Details</a>
                             <a asp-page="./Edit" asp-route-id="@item.WerkbonID" class="btn green-outline btn-sm">Bijwerken</a>
                             <a asp-page="./Delete" asp-route-id="@item.WerkbonID" class="btn green-outline btn-sm">Verwijder</a>
