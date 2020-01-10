@@ -2,14 +2,13 @@
 @model WerkbonApplicatie.Pages.Werkbonnen.DeleteModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Verwijderen";
 }
 
-<h1>Delete</h1>
+<h1>Verwijderen</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Weet u zeker dat u deze werkbon wilt verwijderen?</h3>
 <div>
-    <h4>Werkbon</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -31,82 +30,10 @@
             @Html.DisplayFor(model => model.Werkbon.Achternaam)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Telefoonnummer)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Telefoonnummer)
-        </dd>
-        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Werkbon.Datum)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Werkbon.Datum)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Inpakken)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Inpakken)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Uitpakken)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Uitpakken)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Montage)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Montage)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Demontage)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Demontage)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Laden)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Laden)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Lossen)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Lossen)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Ophangen_Lamp)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Ophangen_Lamp)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Afhalen_Lamp)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Afhalen_Lamp)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Aansluiten_Witgoed)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Aansluiten_Witgoed)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Afsluiten_Witgoed)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Afsluiten_Witgoed)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Intern_Transport)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Intern_Transport)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Werkbon.Schade_Veroorzaakt)
@@ -115,250 +42,16 @@
             @Html.DisplayFor(model => model.Werkbon.Schade_Veroorzaakt)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Schade_Besproken)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Schade_Besproken)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Schade_Beschrijving)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Schade_Beschrijving)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Kenteken)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Kenteken)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Aanvangstijd)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Aanvangstijd)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Volume)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Volume)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Merk_Kraan)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Merk_Kraan)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Traploper)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Traploper)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Rolsteiger)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Rolsteiger)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Drempelplaat)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Drempelplaat)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Groot_Volume_Bak)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Groot_Volume_Bak)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Wasmachinebeugel)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Wasmachinebeugel)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Noppenfolie)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Noppenfolie)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Eenpersoons_Matrashoes)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Eenpersoons_Matrashoes)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Tweepersoons_Matrashoes)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Tweepersoons_Matrashoes)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Barrel)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Barrel)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Handymankoffers)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Handymankoffers)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Extra_Materiaal)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Extra_Materiaal)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Vertrekuur_Zaak)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Vertrekuur_Zaak)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Inpakken_Manuren)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Inpakken_Manuren)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Uitpakken_Manuren)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Uitpakken_Manuren)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Montage_Manuren)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Montage_Manuren)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Demontage_Manuren)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Demontage_Manuren)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Aantal_Geladen)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Aantal_Geladen)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Starttijd_Laden)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Starttijd_Laden)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Eindtijd_Laden)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Eindtijd_Laden)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Laaduur_Totaal)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Laaduur_Totaal)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Aantal_Gelost)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Aantal_Gelost)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Starttijd_Lossen)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Starttijd_Lossen)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Eindtijd_Lossen)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Eindtijd_Lossen)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Losuur_Totaal)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Losuur_Totaal)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Aankomsttijd_Zaak)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Aankomsttijd_Zaak)
-        </dd>
-        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Werkbon.Bedrag)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Werkbon.Bedrag)
         </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.Betaalwijze)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.Betaalwijze)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.KostenPlaats)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.KostenPlaats)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.LaadAdres)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.LaadAdres)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.LaadPlaats)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.LaadPlaats)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.LaadEtage)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.LaadEtage)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.LosAdres)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.LosAdres)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.LosPlaats)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.LosPlaats)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Werkbon.LosEtage)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Werkbon.LosEtage)
-        </dd>
     </dl>
     
     <form method="post">
         <input type="hidden" asp-for="Werkbon.WerkbonID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
+        <input type="submit" value="Verwijderen" class="btn btn-danger" /> |
+        <a asp-page="./Index">Terug naar overzicht</a>
     </form>
 </div>
