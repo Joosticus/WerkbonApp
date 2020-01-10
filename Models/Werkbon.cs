@@ -10,12 +10,14 @@ namespace WerkbonApplicatie.Models
     {
         public int WerkbonID { get; set; }
         [Display(Name = "Contactpersoon")]
+        [Required (ErrorMessage ="Dit veld is verplicht.")]
         public string Klant_Naam { get; set; }
         public string Voornaam { get; set; }
         public string Achternaam { get; set; }
         [DataType(DataType.PhoneNumber)]
         public int Telefoonnummer { get; set; }
         [DataType(DataType.Date)]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Datum { get; set; }
         public bool Inpakken { get; set; }
         public bool Uitpakken { get; set; }
@@ -47,8 +49,12 @@ namespace WerkbonApplicatie.Models
 
         [Display(Name = "Schade beschrijving")]
         public string Schade_Beschrijving { get; set; }
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
+
         public string Kenteken { get; set; }
+
         [DataType(DataType.Time)]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Aanvangstijd { get; set; }
         public int Volume { get; set; }
 
@@ -76,52 +82,67 @@ namespace WerkbonApplicatie.Models
 
         [Display(Name = "Vertrekuur Zaak")]
         [DataType(DataType.Time)]
+        [Required(ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Vertrekuur_Zaak { get; set; }
 
         [Display(Name = "Inpakken Manuren")]
+        [Required(ErrorMessage = "Dit veld is verplicht.")]
         public int Inpakken_Manuren { get; set; }
 
         [Display(Name = "Uitpakken Manuren")]
+        [Required(ErrorMessage = "Dit veld is verplicht.")]
         public int Uitpakken_Manuren { get; set; }
 
         [Display(Name = "Montage manuren")]
+        [Required(ErrorMessage = "Dit veld is verplicht.")]
         public int Montage_Manuren { get; set; }
 
         [Display(Name = "Demontage manuren")]
+        [Required(ErrorMessage = "Dit veld is verplicht.")]
         public int Demontage_Manuren { get; set; }
 
         [Display(Name = "Aantal man geladen")]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Aantal_Geladen { get; set; }
 
         [Display(Name = "Starttijd laden")]
         [DataType(DataType.Time)]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Starttijd_Laden { get; set; }
 
         [Display(Name = "Eindtijd laden")]
         [DataType(DataType.Time)]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Eindtijd_Laden { get; set; }
 
         [Display(Name = "Totale Laaduren")]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Laaduur_Totaal { get; set; }
 
         [Display(Name = "Aantal man gelost")]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Aantal_Gelost { get; set; }
 
         [Display(Name = "Starttijd lossen")]
         [DataType(DataType.Time)]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Starttijd_Lossen { get; set; }
 
         [Display(Name = "Eindtijd lossen")]
         [DataType(DataType.Time)]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Eindtijd_Lossen { get; set; }
 
         [Display(Name = "Totale Losuren")]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Losuur_Totaal { get; set; }
 
         [Display(Name = "Aankomsttijd zaak")]
         [DataType(DataType.Time)]
+        [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Aankomsttijd_Zaak { get; set; }
         [Display(Name = "Bedrag")]
+        [DataType(DataType.Currency)]
         public int Bedrag { get; set; }
         public string Betaalwijze { get; set; }
         [Display(Name = "Kostenplaats")]
