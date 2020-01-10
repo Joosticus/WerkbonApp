@@ -14,19 +14,8 @@ namespace WerkbonApplicatie.Data
         {
         }
 
-        public DbSet<WerkbonApplicatie.Models.Klant> Klant { get; set; }
-
-        public DbSet<WerkbonApplicatie.Models.Verhuizing> Verhuizing { get; set; }
-
         public DbSet<WerkbonApplicatie.Models.Personeel> Personeel { get; set; }
 
-        public DbSet<WerkbonApplicatie.Models.Verhuizing_Personeel> Verhuizing_Personeel { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Verhuizing_Personeel>()
-                .HasKey(o => new { o.PersoneelID, o.VerhuizingID });
-        }
-        public DbSet<WerkbonApplicatie.Models.Adres> Adres { get; set; }
         public DbSet<WerkbonApplicatie.Models.Werkbon> Werkbon { get; set; }
     }
 }

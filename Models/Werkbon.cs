@@ -71,72 +71,72 @@ namespace WerkbonApplicatie.Models
         public bool Barrel { get; set; }
         public bool Handymankoffers { get; set; }
 
-        [Display(Name = "Extra materiaal")]
+        [Display(Name = "Extra materiaal:")]
         public string Extra_Materiaal { get; set; }
 
-        [Display(Name = "Vertrekuur Zaak")]
+        [Display(Name = "Vertrekuur Zaak:")]
         [DataType(DataType.Time)]
         public DateTime Vertrekuur_Zaak { get; set; }
 
-        [Display(Name = "Inpakken Manuren")]
+        [Display(Name = "Inpakken Manuren:")]
         public int Inpakken_Manuren { get; set; }
 
-        [Display(Name = "Uitpakken Manuren")]
+        [Display(Name = "Uitpakken Manuren:")]
         public int Uitpakken_Manuren { get; set; }
 
-        [Display(Name = "Montage manuren")]
+        [Display(Name = "Montage manuren:")]
         public int Montage_Manuren { get; set; }
 
-        [Display(Name = "Demontage manuren")]
+        [Display(Name = "Demontage manuren:")]
         public int Demontage_Manuren { get; set; }
 
-        [Display(Name = "Aantal man geladen")]
+        [Display(Name = "Aantal man geladen:")]
         public int Aantal_Geladen { get; set; }
 
-        [Display(Name = "Starttijd laden")]
+        [Display(Name = "Starttijd laden:")]
         [DataType(DataType.Time)]
         public DateTime Starttijd_Laden { get; set; }
 
-        [Display(Name = "Eindtijd laden")]
+        [Display(Name = "Eindtijd laden:")]
         [DataType(DataType.Time)]
         public DateTime Eindtijd_Laden { get; set; }
 
-        [Display(Name = "Totale Laaduren")]
+        [Display(Name = "Totale Laaduren:")]
         public int Laaduur_Totaal { get; set; }
 
-        [Display(Name = "Aantal man gelost")]
+        [Display(Name = "Aantal man gelost:")]
         public int Aantal_Gelost { get; set; }
 
-        [Display(Name = "Starttijd lossen")]
+        [Display(Name = "Starttijd lossen:")]
         [DataType(DataType.Time)]
         public DateTime Starttijd_Lossen { get; set; }
 
-        [Display(Name = "Eindtijd lossen")]
+        [Display(Name = "Eindtijd lossen:")]
         [DataType(DataType.Time)]
         public DateTime Eindtijd_Lossen { get; set; }
 
-        [Display(Name = "Totale Losuren")]
+        [Display(Name = "Totale Losuren:")]
         public int Losuur_Totaal { get; set; }
 
-        [Display(Name = "Aankomsttijd zaak")]
+        [Display(Name = "Aankomsttijd zaak:")]
         [DataType(DataType.Time)]
         public DateTime Aankomsttijd_Zaak { get; set; }
-        [Display(Name = "Bedrag")]
+        [Display(Name = "Bedrag:")]
         public int Bedrag { get; set; }
         public string Betaalwijze { get; set; }
-        [Display(Name = "Kostenplaats")]
+        [Display(Name = "Kostenplaats:")]
         public string KostenPlaats { get; set; }
-        [Display(Name = "Adres")]
+        [Display(Name = "Adres:")]
         public string LaadAdres{ get; set; }
-        [Display(Name = "Plaats")]
+        [Display(Name = "Plaats:")]
         public string LaadPlaats { get; set; }
-        [Display(Name = "Etage")]
+        [Display(Name = "Etage:")]
         public int LaadEtage { get; set; }
-        [Display(Name = "Adres")]
+        [Display(Name = "Adres:")]
         public string LosAdres { get; set; }
-        [Display(Name = "Plaats")]
+        [Display(Name = "Plaats:")]
         public string LosPlaats { get; set; }
-        [Display(Name = "Etage")]
+        [Display(Name = "Etage:")]
         public int LosEtage { get; set; }
     }
 }
