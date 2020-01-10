@@ -77,10 +77,10 @@ namespace WerkbonApplicatie.Models
         public bool Barrel { get; set; }
         public bool Handymankoffers { get; set; }
 
-        [Display(Name = "Extra materiaal")]
+        [Display(Name = "Extra materiaal:")]
         public string Extra_Materiaal { get; set; }
 
-        [Display(Name = "Vertrekuur Zaak")]
+        [Display(Name = "Vertrekuur Zaak:")]
         [DataType(DataType.Time)]
         [Required(ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Vertrekuur_Zaak { get; set; }
@@ -105,12 +105,12 @@ namespace WerkbonApplicatie.Models
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Aantal_Geladen { get; set; }
 
-        [Display(Name = "Starttijd laden")]
+        [Display(Name = "Starttijd laden:")]
         [DataType(DataType.Time)]
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Starttijd_Laden { get; set; }
 
-        [Display(Name = "Eindtijd laden")]
+        [Display(Name = "Eindtijd laden:")]
         [DataType(DataType.Time)]
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Eindtijd_Laden { get; set; }
@@ -123,12 +123,12 @@ namespace WerkbonApplicatie.Models
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Aantal_Gelost { get; set; }
 
-        [Display(Name = "Starttijd lossen")]
+        [Display(Name = "Starttijd lossen:")]
         [DataType(DataType.Time)]
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Starttijd_Lossen { get; set; }
 
-        [Display(Name = "Eindtijd lossen")]
+        [Display(Name = "Eindtijd lossen:")]
         [DataType(DataType.Time)]
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Eindtijd_Lossen { get; set; }
@@ -137,7 +137,7 @@ namespace WerkbonApplicatie.Models
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Losuur_Totaal { get; set; }
 
-        [Display(Name = "Aankomsttijd zaak")]
+        [Display(Name = "Aankomsttijd zaak:")]
         [DataType(DataType.Time)]
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Aankomsttijd_Zaak { get; set; }
@@ -145,19 +145,19 @@ namespace WerkbonApplicatie.Models
         [DataType(DataType.Currency)]
         public int Bedrag { get; set; }
         public string Betaalwijze { get; set; }
-        [Display(Name = "Kostenplaats")]
+        [Display(Name = "Kostenplaats:")]
         public string KostenPlaats { get; set; }
-        [Display(Name = "Adres")]
+        [Display(Name = "Adres:")]
         public string LaadAdres{ get; set; }
-        [Display(Name = "Plaats")]
+        [Display(Name = "Plaats:")]
         public string LaadPlaats { get; set; }
-        [Display(Name = "Etage")]
+        [Display(Name = "Etage:")]
         public int LaadEtage { get; set; }
-        [Display(Name = "Adres")]
+        [Display(Name = "Adres:")]
         public string LosAdres { get; set; }
-        [Display(Name = "Plaats")]
+        [Display(Name = "Plaats:")]
         public string LosPlaats { get; set; }
-        [Display(Name = "Etage")]
+        [Display(Name = "Etage:")]
         public int LosEtage { get; set; }
     }
 }
