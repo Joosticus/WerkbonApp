@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace WerkbonApplicatie.Models
 {
     public class Personeel
-    {   
+    {
         public int PersoneelID { get; set; }
         [Display(Name = "Voornaam")]
         public string Pesoneel_VoorNaam { get; set; }
