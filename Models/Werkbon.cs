@@ -159,5 +159,10 @@ namespace WerkbonApplicatie.Models
         public string LosPlaats { get; set; }
         [Display(Name = "Etage:")]
         public int LosEtage { get; set; }
+
+        public string Image { get; set; }
+        public string ImageSecond { get; set; }
+        public string Guid { get; set; }
+        public string GuidSecond { get; set; }
     }
 }
