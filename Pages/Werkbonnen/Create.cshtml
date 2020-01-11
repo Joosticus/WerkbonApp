@@ -8,25 +8,8 @@
       string idFirst = guid.ToString();
       string idSecond = guidSecond.ToString();
 }
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
 
-<script>
-        $(function () {
-            var canvas = document.querySelector('#signature');
-            var pad = new SignaturePad(canvas);
 
-             var canvasSecond = document.querySelector('#signatureSecond');
-            var padSecond = new SignaturePad(canvasSecond);
-            $('#accept').click(function(){
-                var data = pad.toDataURL();
-                $('#SignatureDataUrl').val(data);
-                var dataSecond = padSecond.toDataURL();
-                $('#SignatureDataUrlSecond').val(dataSecond);
-                pad.off();
-            });
-        });
-</script>
 <h1>Werkbon aanmaken</h1>
 <form method="post">
     <div class="row">
