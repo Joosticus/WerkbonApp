@@ -1,4 +1,5 @@
 ﻿$(function () {
+    // Copy dataUrl to input fields
     var canvas = document.querySelector('#signature');
     var pad = new SignaturePad(canvas);
 
@@ -12,3 +13,14 @@
         pad.off();
     });
 });
+$(document).ready(function () {
+    // Export werkbon table to excel
+    $("#exportbutton").click(function () {
+        $("#exportTable").table2excel({
+            name: "Werkbon Data",
+            filename: "Export werkbon data",
+            fileext: ".xls"
+        });
+    });
+});
+
