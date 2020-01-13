@@ -380,7 +380,6 @@ C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\bin\Debug\netcoreapp3.0\runt
 C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\WerkbonApplicatie.csprojAssemblyReference.cache
 C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\staticwebassets\WerkbonApplicatie.StaticWebAssets.Manifest.cache
 C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\staticwebassets\WerkbonApplicatie.StaticWebAssets.xml
-C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\WerkbonApplicatie.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\WerkbonApplicatie.RazorAssemblyInfo.cache
 C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\WerkbonApplicatie.RazorAssemblyInfo.cs
 C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\WerkbonApplicatie.AssemblyInfoInputs.cache
@@ -422,3 +421,10 @@ C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\Werk
 C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\WerkbonApplicatie.csproj.CopyComplete
 C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\WerkbonApplicatie.dll
 C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\WerkbonApplicatie.pdb
+C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\bin\Debug\netcoreapp3.0\IdentityModel.Net45.dll
+C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\bin\Debug\netcoreapp3.0\IdentityServer3.dll
+C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\bin\Debug\netcoreapp3.0\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\bin\Debug\netcoreapp3.0\Owin.dll
+C:\Users\Inspi\OneDrive\Documents\GitHub\WerkbonApp\obj\Debug\netcoreapp3.0\WerkbonApplicatie.MvcApplicationPartsAssemblyInfo.cache
