@@ -9,7 +9,7 @@ namespace WerkbonApplicatie.Models
     public class Werkbon
     {
         public int WerkbonID { get; set; }
-        [Display(Name = "Contactpersoon")]
+        [Display(Name = "Contactpersoon:")]
         [Required (ErrorMessage ="Dit veld is verplicht.")]
         public string Klant_Naam { get; set; }
         public string Voornaam { get; set; }
@@ -85,23 +85,23 @@ namespace WerkbonApplicatie.Models
         [Required(ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Vertrekuur_Zaak { get; set; }
 
-        [Display(Name = "Inpakken Manuren")]
+        [Display(Name = "Inpakken Manuren:")]
         [Required(ErrorMessage = "Dit veld is verplicht.")]
         public int Inpakken_Manuren { get; set; }
 
-        [Display(Name = "Uitpakken Manuren")]
+        [Display(Name = "Uitpakken Manuren:")]
         [Required(ErrorMessage = "Dit veld is verplicht.")]
         public int Uitpakken_Manuren { get; set; }
 
-        [Display(Name = "Montage manuren")]
+        [Display(Name = "Montage manuren:")]
         [Required(ErrorMessage = "Dit veld is verplicht.")]
         public int Montage_Manuren { get; set; }
 
-        [Display(Name = "Demontage manuren")]
+        [Display(Name = "Demontage manuren:")]
         [Required(ErrorMessage = "Dit veld is verplicht.")]
         public int Demontage_Manuren { get; set; }
 
-        [Display(Name = "Aantal man geladen")]
+        [Display(Name = "Aantal man geladen:")]
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Aantal_Geladen { get; set; }
 
@@ -115,11 +115,11 @@ namespace WerkbonApplicatie.Models
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Eindtijd_Laden { get; set; }
 
-        [Display(Name = "Totale Laaduren")]
+        [Display(Name = "Totale Laaduren:")]
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Laaduur_Totaal { get; set; }
 
-        [Display(Name = "Aantal man gelost")]
+        [Display(Name = "Aantal man gelost:")]
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Aantal_Gelost { get; set; }
 
@@ -133,7 +133,7 @@ namespace WerkbonApplicatie.Models
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public DateTime Eindtijd_Lossen { get; set; }
 
-        [Display(Name = "Totale Losuren")]
+        [Display(Name = "Totale Losuren:")]
         [Required (ErrorMessage = "Dit veld is verplicht.")]
         public int Losuur_Totaal { get; set; }
 
