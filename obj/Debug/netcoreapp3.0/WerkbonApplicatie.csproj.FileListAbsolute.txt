@@ -265,3 +265,4 @@ C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonnen\Details.cshtml.g.cs
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonnen\Edit.cshtml.g.cs
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonnen\Index.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Exporteren\Index.cshtml.g.cs

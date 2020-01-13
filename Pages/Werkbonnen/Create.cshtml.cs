@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -35,11 +36,22 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
             {
                 return Page();
             }
+           
+            var base64Signature = Werkbon.Image.Split(",")[1];
+            var binarySignature = Convert.FromBase64String(base64Signature);
+          
+            System.IO.File.WriteAllBytes("wwwroot/images/" + Werkbon.Guid + ".png", binarySignature);
+
+            var base64SignatureSecond = Werkbon.ImageSecond.Split(",")[1];
+            var binarySignatureSecond = Convert.FromBase64String(base64SignatureSecond);
+
+            System.IO.File.WriteAllBytes("wwwroot/images/" + Werkbon.GuidSecond + ".png", binarySignatureSecond);
 
             _context.Werkbon.Add(Werkbon);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
         }
+     
     }
 }
