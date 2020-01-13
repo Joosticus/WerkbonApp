@@ -2,7 +2,11 @@
 @model WerkbonApplicatie.Pages.Werkbonnen.EditModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Bewerken";
+     Guid guid = Guid.NewGuid();
+     Guid guidSecond = Guid.NewGuid();
+     string idFirst = guid.ToString();
+     string idSecond = guidSecond.ToString();
 }
 
 <h1>Werkbon bewerken</h1>
@@ -354,15 +358,43 @@
                     <span asp-validation-for="Werkbon.KostenPlaats" class="text-danger"></span>
                 </div>
             </div>
-            <input type="text" hidden asp-for="Werkbon.Image">
-            <input type="text" hidden asp-for="Werkbon.Guid">
-            <input type="text" hidden asp-for="Werkbon.ImageSecond">
-            <input type="text" hidden asp-for="Werkbon.GuidSecond">
+            @if (String.IsNullOrEmpty(Model.Werkbon.Image) && String.IsNullOrEmpty(Model.Werkbon.ImageSecond))
+            {
+                <div class="row" style="padding-left: 16px">
+                    <div class="col-xs-6">
+                        <p>Handtekening opdrachtgever</p>
+                        <canvas width="500" height="400" id="signature"
+                                style="border:1px solid black"></canvas><br>
+
+                        <input type="text" hidden id="SignatureDataUrl" asp-for="Werkbon.Image">
+                        <input type="text" hidden value="@idFirst" asp-for="Werkbon.Guid">
+
+                    </div>
+                    <div class="col-xs-6">
+                        <p>Handtekening verhuizer</p>
+                        <canvas width="500" height="400" id="signatureSecond"
+                                style="border:1px solid black"></canvas><br>
+
+                        <input type="text" hidden id="SignatureDataUrlSecond" asp-for="Werkbon.ImageSecond">
+                        <input type="text" hidden value="@idSecond" asp-for="Werkbon.GuidSecond">
+                    </div>
+                </div>
+            }
+            else
+            {
+                <input type="text" hidden id="SignatureDataUrl" asp-for="Werkbon.Image">
+                <input type="text" hidden asp-for="Werkbon.Guid">
+
+                <input type="text" hidden id="SignatureDataUrlSecond" asp-for="Werkbon.ImageSecond">
+                <input type="text" hidden asp-for="Werkbon.GuidSecond">
+
+
+            }
         </div>
     </div>
     <br />
     <div class="form-group centerdiv">
-        <input type="submit" value="Opslaan" class="btn green createbtn" />
+        <input type="submit" id="accept" value="Opslaan" class="btn green createbtn" />
     </div>
 </form>
 

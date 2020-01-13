@@ -426,27 +426,23 @@
                 </dd>
             </dl>
         </div>
-        <div class="row" style="padding-left: 16px">
-            <div class="col-xs-6">
-                <p>Handtekening opdrachtgever</p><br />
-                <img src="~/images/@(Model.Werkbon.Guid).png" />
+        @if (!String.IsNullOrEmpty(Model.Werkbon.Image) && !String.IsNullOrEmpty(Model.Werkbon.ImageSecond))
+        {
+            <div class="row" style="padding-left: 16px">
+                <div class="col-xs-6">
+                    <p>Handtekening opdrachtgever</p><br />
+                    <img src="~/images/@(Model.Werkbon.Guid).png" />
+                </div>
+                <div class="col-xs-6">
+                    <p>Handtekening verhuizer</p><br />
+                    <img src="~/images/@(Model.Werkbon.GuidSecond).png" />
+                </div>
             </div>
-            <div class="col-xs-6">
-                <p>Handtekening verhuizer</p><br />
-                <img src="~/images/@(Model.Werkbon.GuidSecond).png" />
-            </div>
+        }
         </div>
-    </div>
-    <body>
-        <button class="btn green" onclick="printen()">Pagina afdrukken</button>
-        <script>
-            function printen() {
-                window.print();
-            }
-        </script>
-    </body>
 </div>
-        <div>
-            <a asp-page="./Edit" asp-route-id="@Model.Werkbon.WerkbonID">Bewerken</a> |
-            <a asp-page="./Index">Terug naar overzicht</a>
-        </div>
+<div class="centerdiv">
+    <a href="#" onclick="printen()">Pagina afdrukken</a> |
+    <a asp-page="./Edit" asp-route-id="@Model.Werkbon.WerkbonID">Bewerken</a> |
+    <a asp-page="./Index">Terug naar overzicht</a>
+</div>

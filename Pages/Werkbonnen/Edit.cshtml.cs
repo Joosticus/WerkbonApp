@@ -52,6 +52,22 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
 
             try
             {
+                if (!String.IsNullOrEmpty(Werkbon.Image))
+                {
+                    var base64Signature = Werkbon.Image.Split(",")[1];
+                    var binarySignature = Convert.FromBase64String(base64Signature);
+
+                    System.IO.File.WriteAllBytes("wwwroot/images/" + Werkbon.Guid + ".png", binarySignature);
+                }
+
+                if (!String.IsNullOrEmpty(Werkbon.ImageSecond))
+                {
+                    var base64SignatureSecond = Werkbon.ImageSecond.Split(",")[1];
+                    var binarySignatureSecond = Convert.FromBase64String(base64SignatureSecond);
+
+                    System.IO.File.WriteAllBytes("wwwroot/images/" + Werkbon.GuidSecond + ".png", binarySignatureSecond);
+                }
+
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
