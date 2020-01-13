@@ -437,7 +437,14 @@
             </div>
         </div>
     </div>
-
+    <body>
+        <button class="btn green" onclick="printen()">Pagina afdrukken</button>
+        <script>
+            function printen() {
+                window.print();
+            }
+        </script>
+    </body>
 </div>
         <div>
             <a asp-page="./Edit" asp-route-id="@Model.Werkbon.WerkbonID">Bewerken</a> |

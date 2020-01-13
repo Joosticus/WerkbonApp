@@ -7,24 +7,17 @@ namespace WerkbonApplicatie.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<string>(
+            migrationBuilder.AddColumn<string>(
                 name: "Image",
                 table: "Werkbon",
-                nullable: true,
-                oldClrType: typeof(byte[]),
-                oldType: "varbinary(max)",
-                oldNullable: true);
+                nullable: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<byte[]>(
+            migrationBuilder.DropColumn(
                 name: "Image",
-                table: "Werkbon",
-                type: "varbinary(max)",
-                nullable: true,
-                oldClrType: typeof(string),
-                oldNullable: true);
+                table: "Werkbon");
         }
     }
 }
