@@ -242,6 +242,36 @@ namespace WerkbonApplicatie.Migrations
 
                     b.ToTable("Werkbon");
                 });
+
+            modelBuilder.Entity("WerkbonApplicatie.Models.Werkbonpersoneel", b =>
+                {
+                    b.Property<int>("PersoneelID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WerkbonID")
+                        .HasColumnType("int");
+
+                    b.HasKey("PersoneelID", "WerkbonID");
+
+                    b.HasIndex("WerkbonID");
+
+                    b.ToTable("Werkbonpersoneel");
+                });
+
+            modelBuilder.Entity("WerkbonApplicatie.Models.Werkbonpersoneel", b =>
+                {
+                    b.HasOne("WerkbonApplicatie.Models.Personeel", "personeel")
+                        .WithMany()
+                        .HasForeignKey("PersoneelID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WerkbonApplicatie.Models.Werkbon", "werkbon")
+                        .WithMany()
+                        .HasForeignKey("WerkbonID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
 #pragma warning restore 612, 618
         }
     }
