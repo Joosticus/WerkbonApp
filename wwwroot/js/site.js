@@ -22,5 +22,9 @@ $(document).ready(function () {
             fileext: ".xls"
         });
     });
+
 });
 
+function printen() {
+    window.print();
+}
