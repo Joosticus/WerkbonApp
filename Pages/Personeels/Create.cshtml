@@ -5,7 +5,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Toevoeg een Personeel</h1>
 
 <h4>Personeel</h4>
 <hr />
@@ -34,14 +34,14 @@
                 <span asp-validation-for="Personeel.Username" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit"class="btn green mr-2" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="Index"class="btn green mr-2">Terug naar lijst</a>
 </div>
 
 @section Scripts {
