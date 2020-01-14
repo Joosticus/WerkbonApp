@@ -2,12 +2,6 @@
 @model WerkbonApplicatie.Pages.Werkbonnen.CreateModel
 
 @{
-    int x = 1;
-    foreach(var y in ViewBag.WerkbonID)
-    {
-        int result = Int32.Parse(y.Value);
-        x = result + 1;
-    }
     ViewData["Title"] = "Werkbon aanmaken";
 }
 
@@ -120,20 +114,6 @@
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="Werkbon.Intern_Transport" /> @Html.DisplayNameFor(model => model.Werkbon.Intern_Transport)
                 </label>
-            </div>
-        </div>
-
-        <div class="column">
-            <h3>Werknemers:</h3>
-            <div class="form-group">
-                <label asp-for="Werkbonpersoneel.PersoneelID" class="control-label"></label>
-                <select asp-for="Werkbonpersoneel.PersoneelID" class="form-control" asp-items="ViewBag.PersoneelID"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Werkbonpersoneel.WerkbonID" class="control-label"></label>
-                <select asp-for="Werkbonpersoneel.WerkbonID" class="form-control">
-                    <option value="@x">@x</option>
-                </select>
             </div>
         </div>
 
