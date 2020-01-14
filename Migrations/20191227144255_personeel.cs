@@ -14,7 +14,6 @@ namespace WerkbonApplicatie.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Pesoneel_VoorNaam = table.Column<string>(nullable: true),
                     Personeel_Achternaam = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: true),
                     Functie = table.Column<string>(nullable: true),
                     Username = table.Column<string>(nullable: true)
                 },
