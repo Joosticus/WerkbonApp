@@ -271,3 +271,4 @@ C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonpersoneels\Details.cshtml.g.cs
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonpersoneels\Edit.cshtml.g.cs
 C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonpersoneels\Index.cshtml.g.cs
+C:\Users\joost\OneDrive\Documenten\Visual Studio projecten\WerkbonApp\obj\Debug\netcoreapp3.0\Razor\Pages\Werkbonnen\Werknemer.cshtml.g.cs
