@@ -79,6 +79,8 @@ namespace WerkbonApplicatie.Models
 
         [Display(Name = "Extra materiaal:")]
         public string Extra_Materiaal { get; set; }
+        [Display(Name ="Achtergelaten materiaal:")]
+        public string Achtergelaten_Materiaal { get; set; }
 
         [Display(Name = "Vertrekuur Zaak:")]
         [DataType(DataType.Time)]
