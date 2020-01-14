@@ -9,7 +9,7 @@ namespace WerkbonApplicatie.Data
 {
     public class WerkbonApplicatieContext : DbContext
     {
-        public WerkbonApplicatieContext (DbContextOptions<WerkbonApplicatieContext> options)
+        public WerkbonApplicatieContext(DbContextOptions<WerkbonApplicatieContext> options)
             : base(options)
         {
         }
@@ -17,5 +17,12 @@ namespace WerkbonApplicatie.Data
         public DbSet<WerkbonApplicatie.Models.Personeel> Personeel { get; set; }
 
         public DbSet<WerkbonApplicatie.Models.Werkbon> Werkbon { get; set; }
+
+        public DbSet<WerkbonApplicatie.Models.Werkbonpersoneel> Werkbonpersoneel { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Werkbonpersoneel>()
+                .HasKey(o => new { o.PersoneelID, o.WerkbonID });
+        }
     }
 }
