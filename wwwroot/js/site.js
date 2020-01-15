@@ -5,6 +5,8 @@
 
     var canvasSecond = document.querySelector('#signatureSecond');
     var padSecond = new SignaturePad(canvasSecond);
+
+    // On accept/save button put dataUrl in input fields
     $('#accept').click(function () {
         var data = pad.toDataURL();
         $('#SignatureDataUrl').val(data);
@@ -23,8 +25,15 @@ $(document).ready(function () {
         });
     });
 
+    // Kenteken field to uppercase on keyup
+    $("#kenteken").keyup(function () {
+        $(this).val($(this).val().toUpperCase());
+    });
+
 });
 
+// OnClick printen button open print window
 function printen() {
     window.print();
 }
+
