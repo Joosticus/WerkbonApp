@@ -27,6 +27,7 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
         {
             // Get all Personeel for filter list
             Personeel = await _context.Personeel.ToListAsync();
+
             // Get all werbonnen
             var werkbonnen = from m in _context.Werkbon
                                select m;
@@ -34,8 +35,11 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
             // If searchstring is not empty do function
             if (!string.IsNullOrEmpty(SearchString))
             {
-                // Search where searchstring is klantnaam, bedrag or datum
-                werkbonnen = werkbonnen.Where(s => s.Klant_Naam.Contains(SearchString) || s.Telefoonnummer.ToString().Contains(SearchString) || s.Datum.ToString().Contains(SearchString) || s.Telefoonnummer.ToString().Contains(SearchString));
+                // Convert searchstring to datetime
+                var datetimeSearch = DateTime.Parse(SearchString);
+
+                // Get werkbonnen where werkbon date is same as searched date.
+                werkbonnen = werkbonnen.Where(s => s.Datum == datetimeSearch);
             }
 
             Werkbon = await werkbonnen.ToListAsync();
