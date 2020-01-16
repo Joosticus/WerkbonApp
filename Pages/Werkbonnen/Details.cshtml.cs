@@ -19,10 +19,15 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
             _context = context;
         }
 
+        public IList<Werkbonpersoneel> Werkbonpersoneels { get; set; }
         public Werkbon Werkbon { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
+            Werkbonpersoneels = await _context.Werkbonpersoneel
+                .Include(w => w.personeel)
+                .Include(w => w.werkbon).ToListAsync();
+
             if (id == null)
             {
                 return NotFound();
