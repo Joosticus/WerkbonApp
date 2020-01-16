@@ -20,23 +20,7 @@
         </form>
     </li>
 </ul>
-<div class="row">
-    <div class="col-sm-4">
-        Select your user :
-        <select id=""input class="form-control" type="search" asp-for="SearchString">
-            
-            @foreach (var item in Model.Personeel)
-            {
-                <option value="@item.Username">
 
-                    @Html.DisplayFor(modelItem => item.Username)
-
-                </option>
-            }
-        </select>
-        <button class="btn green" type="submit">Zoeken</button>
-    </div>
-</div>
 <p></p>
 <div class="row">
     @foreach (var item in Model.Werkbon)

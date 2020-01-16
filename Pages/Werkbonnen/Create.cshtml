@@ -209,33 +209,6 @@
             </div>
         </div>
 
-        <div class="column">
-            <h3>Achtergelaten materiaal:</h3>
-            <div class="form-group">
-                <textarea rows="6" asp-for="Werkbon.Achtergelaten_Materiaal" class="form-control"></textarea>
-                <span asp-validation-for="Werkbon.Achtergelaten_Materiaal" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="column">
-            <h3>Schade</h3>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Schade_Veroorzaakt" /> @Html.DisplayNameFor(model => model.Werkbon.Schade_Veroorzaakt)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Schade_Besproken" /> @Html.DisplayNameFor(model => model.Werkbon.Schade_Besproken)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="Werkbon.Schade_Beschrijving" class="control-label"></label>
-                <textarea rows="6" asp-for="Werkbon.Schade_Beschrijving" class="form-control"></textarea>
-                <span asp-validation-for="Werkbon.Schade_Beschrijving" class="text-danger"></span>
-            </div>
-        </div>
-
         <div class="uitvoergegevens">
             <h3>Uitvoeringsgegevens</h3>
             <div class="form-group">

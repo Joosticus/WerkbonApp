@@ -13,9 +13,6 @@ namespace WerkbonApplicatie.Models
         public string Pesoneel_VoorNaam { get; set; }
         [Display(Name = "Achternaam")]
         public string Personeel_Achternaam { get; set; }
-        public string Functie { get; set; }
-        [Display(Name = "Gebruikersnaam")]
-        public string Username { get; set; }
         
     }
 }

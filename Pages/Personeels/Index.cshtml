@@ -19,12 +19,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Personeel[0].Personeel_Achternaam)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Personeel[0].Functie)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Personeel[0].Username)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -36,12 +30,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Personeel_Achternaam)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Functie)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Username)
             </td>
             <td>
                 <a asp-page="./Edit" class="btn green mr-2" asp-route-id="@item.PersoneelID">Aanpassen</a> |

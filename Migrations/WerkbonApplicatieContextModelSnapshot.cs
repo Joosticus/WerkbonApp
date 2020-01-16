@@ -26,16 +26,10 @@ namespace WerkbonApplicatie.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Functie")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Personeel_Achternaam")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Pesoneel_VoorNaam")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Username")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("PersoneelID");
