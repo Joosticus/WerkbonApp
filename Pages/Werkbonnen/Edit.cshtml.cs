@@ -58,6 +58,7 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
 
             try
             {
+                // Use function if werkbon.image exist
                 if (!String.IsNullOrEmpty(Werkbon.Image))
                 {
                     var base64Signature = Werkbon.Image.Split(",")[1];
@@ -66,6 +67,7 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
                     System.IO.File.WriteAllBytes("wwwroot/images/" + Werkbon.Guid + ".png", binarySignature);
                 }
 
+                // Use function if werkbon.imageSecond exist
                 if (!String.IsNullOrEmpty(Werkbon.ImageSecond))
                 {
                     var base64SignatureSecond = Werkbon.ImageSecond.Split(",")[1];
