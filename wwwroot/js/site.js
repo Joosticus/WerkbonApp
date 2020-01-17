@@ -30,6 +30,11 @@ $(document).ready(function () {
         $(this).val($(this).val().toUpperCase());
     });
 
+    $(".datepicker").flatpickr({
+        dateFormat: "d-m-Y",
+        weekNumbers: true,
+        locale: "nl"
+    });
 });
 
 // OnClick printen button open print window
