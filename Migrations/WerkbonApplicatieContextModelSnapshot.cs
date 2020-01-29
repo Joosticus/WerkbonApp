@@ -44,16 +44,16 @@ namespace WerkbonApplicatie.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("Aankomsttijd_Zaak")
+                    b.Property<DateTime?>("Aankomsttijd_Zaak")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("Aansluiten_Witgoed")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Aantal_Geladen")
+                    b.Property<int?>("Aantal_Geladen")
                         .HasColumnType("int");
 
-                    b.Property<int>("Aantal_Gelost")
+                    b.Property<int?>("Aantal_Gelost")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Aanvangstijd")
@@ -74,7 +74,7 @@ namespace WerkbonApplicatie.Migrations
                     b.Property<bool>("Barrel")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Bedrag")
+                    b.Property<int?>("Bedrag")
                         .HasColumnType("int");
 
                     b.Property<string>("Betaalwijze")
@@ -86,7 +86,7 @@ namespace WerkbonApplicatie.Migrations
                     b.Property<bool>("Demontage")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Demontage_Manuren")
+                    b.Property<int?>("Demontage_Manuren")
                         .HasColumnType("int");
 
                     b.Property<bool>("Drempelplaat")
@@ -95,11 +95,17 @@ namespace WerkbonApplicatie.Migrations
                     b.Property<bool>("Eenpersoons_Matrashoes")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("Eindtijd_Laden")
+                    b.Property<DateTime?>("Eindtijd_Laden")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("Eindtijd_Lossen")
+                    b.Property<DateTime?>("Eindtijd_Lossen")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Extra_Laadadres")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Extra_Losadres")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Extra_Materiaal")
                         .HasColumnType("nvarchar(max)");
@@ -125,7 +131,7 @@ namespace WerkbonApplicatie.Migrations
                     b.Property<bool>("Inpakken")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Inpakken_Manuren")
+                    b.Property<int?>("Inpakken_Manuren")
                         .HasColumnType("int");
 
                     b.Property<bool>("Intern_Transport")
@@ -145,13 +151,13 @@ namespace WerkbonApplicatie.Migrations
                     b.Property<string>("LaadAdres")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("LaadEtage")
+                    b.Property<int?>("LaadEtage")
                         .HasColumnType("int");
 
                     b.Property<string>("LaadPlaats")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Laaduur_Totaal")
+                    b.Property<int?>("Laaduur_Totaal")
                         .HasColumnType("int");
 
                     b.Property<bool>("Laden")
@@ -160,7 +166,7 @@ namespace WerkbonApplicatie.Migrations
                     b.Property<string>("LosAdres")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("LosEtage")
+                    b.Property<int?>("LosEtage")
                         .HasColumnType("int");
 
                     b.Property<string>("LosPlaats")
@@ -169,7 +175,7 @@ namespace WerkbonApplicatie.Migrations
                     b.Property<bool>("Lossen")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Losuur_Totaal")
+                    b.Property<int?>("Losuur_Totaal")
                         .HasColumnType("int");
 
                     b.Property<string>("Merk_Kraan")
@@ -178,7 +184,7 @@ namespace WerkbonApplicatie.Migrations
                     b.Property<bool>("Montage")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Montage_Manuren")
+                    b.Property<int?>("Montage_Manuren")
                         .HasColumnType("int");
 
                     b.Property<bool>("Noppenfolie")
@@ -199,10 +205,10 @@ namespace WerkbonApplicatie.Migrations
                     b.Property<bool>("Schade_Veroorzaakt")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("Starttijd_Laden")
+                    b.Property<DateTime?>("Starttijd_Laden")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("Starttijd_Lossen")
+                    b.Property<DateTime?>("Starttijd_Lossen")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Telefoonnummer")
@@ -217,10 +223,10 @@ namespace WerkbonApplicatie.Migrations
                     b.Property<bool>("Uitpakken")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Uitpakken_Manuren")
+                    b.Property<int?>("Uitpakken_Manuren")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("Vertrekuur_Zaak")
+                    b.Property<DateTime?>("Vertrekuur_Zaak")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Volume")
