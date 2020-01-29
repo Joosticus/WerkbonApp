@@ -152,5 +152,9 @@ namespace WerkbonApplicatie.Models
         public string ImageSecond { get; set; }
         public string Guid { get; set; }
         public string GuidSecond { get; set; }
+        [Display(Name = "Extra laadadres:")]
+        public string Extra_Laadadres { get; set; }
+        [Display(Name = "Extra Losadres:")]
+        public string Extra_Losadres { get; set; }
     }
 }

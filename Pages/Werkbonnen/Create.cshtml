@@ -119,10 +119,17 @@
 
         <div class="column">
             <h3>Laadadres:</h3>
-            <div class="form-group">
-                <label asp-for="Werkbon.LaadAdres" class="control-label"></label>
-                <input asp-for="Werkbon.LaadAdres" class="form-control" />
-                <span asp-validation-for="Werkbon.LaadAdres" class="text-danger"></span>
+            <div class="form-group row">
+                <div class="col-md-10">
+                    <label asp-for="Werkbon.LaadAdres" class="control-label"></label>
+                    <input asp-for="Werkbon.LaadAdres" class="form-control" />
+                    <span asp-validation-for="Werkbon.LaadAdres" class="text-danger"></span>
+                </div>
+                <div class="col-md-2">
+                    <label asp-for="Werkbon.LaadEtage" class="control-label"></label>
+                    <input asp-for="Werkbon.LaadEtage" class="form-control" />
+                    <span asp-validation-for="Werkbon.LaadEtage" class="text-danger"></span>
+                </div>
             </div>
             <div class="form-group">
                 <label asp-for="Werkbon.LaadPlaats" class="control-label"></label>
@@ -130,18 +137,25 @@
                 <span asp-validation-for="Werkbon.LaadPlaats" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Werkbon.LaadEtage" class="control-label"></label>
-                <input asp-for="Werkbon.LaadEtage" class="form-control" />
-                <span asp-validation-for="Werkbon.LaadEtage" class="text-danger"></span>
+                <label asp-for="Werkbon.Extra_Laadadres" class="control-label"></label>
+                <textarea rows="2" asp-for="Werkbon.Extra_Laadadres" class="form-control"></textarea>
+                <span asp-validation-for="Werkbon.Extra_Laadadres" class="text-danger"></span>
             </div>
         </div>
 
         <div class="column">
             <h3>Losadres:</h3>
-            <div class="form-group">
-                <label asp-for="Werkbon.LosAdres" class="control-label"></label>
-                <input asp-for="Werkbon.LosAdres" class="form-control" />
-                <span asp-validation-for="Werkbon.LosAdres" class="text-danger"></span>
+            <div class="form-group row">
+                <div class="col-md-10">
+                    <label asp-for="Werkbon.LosAdres" class="control-label"></label>
+                    <input asp-for="Werkbon.LosAdres" class="form-control" />
+                    <span asp-validation-for="Werkbon.LosAdres" class="text-danger"></span>
+                </div>
+                <div class="col-md-2">
+                    <label asp-for="Werkbon.LosEtage" class="control-label"></label>
+                    <input asp-for="Werkbon.LosEtage" class="form-control" />
+                    <span asp-validation-for="Werkbon.LosEtage" class="text-danger"></span>
+                </div>
             </div>
             <div class="form-group">
                 <label asp-for="Werkbon.LosPlaats" class="control-label"></label>
@@ -149,176 +163,176 @@
                 <span asp-validation-for="Werkbon.LosPlaats" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Werkbon.LosEtage" class="control-label"></label>
-                <input asp-for="Werkbon.LosEtage" class="form-control" />
-                <span asp-validation-for="Werkbon.LosEtage" class="text-danger"></span>
+                <label asp-for="Werkbon.Extra_Losadres" class="control-label"></label>
+                <textarea rows="2" asp-for="Werkbon.Extra_Losadres" class="form-control"></textarea>
+                <span asp-validation-for="Werkbon.Extra_Losadres" class="text-danger"></span>
             </div>
         </div>
 
-        <div class="column">
-            <h3>Materiaal:</h3>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Traploper" /> @Html.DisplayNameFor(model => model.Werkbon.Traploper)
-                </label>
+            <div class="column">
+                <h3>Materiaal:</h3>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Werkbon.Traploper" /> @Html.DisplayNameFor(model => model.Werkbon.Traploper)
+                    </label>
 
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Rolsteiger" /> @Html.DisplayNameFor(model => model.Werkbon.Rolsteiger)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Drempelplaat" /> @Html.DisplayNameFor(model => model.Werkbon.Drempelplaat)
-                </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Werkbon.Rolsteiger" /> @Html.DisplayNameFor(model => model.Werkbon.Rolsteiger)
+                    </label>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Werkbon.Drempelplaat" /> @Html.DisplayNameFor(model => model.Werkbon.Drempelplaat)
+                    </label>
 
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Groot_Volume_Bak" /> @Html.DisplayNameFor(model => model.Werkbon.Groot_Volume_Bak)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Wasmachinebeugel" /> @Html.DisplayNameFor(model => model.Werkbon.Wasmachinebeugel)
-                </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Werkbon.Groot_Volume_Bak" /> @Html.DisplayNameFor(model => model.Werkbon.Groot_Volume_Bak)
+                    </label>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Werkbon.Wasmachinebeugel" /> @Html.DisplayNameFor(model => model.Werkbon.Wasmachinebeugel)
+                    </label>
 
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Noppenfolie" /> @Html.DisplayNameFor(model => model.Werkbon.Noppenfolie)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Eenpersoons_Matrashoes" /> @Html.DisplayNameFor(model => model.Werkbon.Eenpersoons_Matrashoes)
-                </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Werkbon.Noppenfolie" /> @Html.DisplayNameFor(model => model.Werkbon.Noppenfolie)
+                    </label>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Werkbon.Eenpersoons_Matrashoes" /> @Html.DisplayNameFor(model => model.Werkbon.Eenpersoons_Matrashoes)
+                    </label>
 
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Tweepersoons_Matrashoes" /> @Html.DisplayNameFor(model => model.Werkbon.Tweepersoons_Matrashoes)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Barrel" /> @Html.DisplayNameFor(model => model.Werkbon.Barrel)
-                </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Werkbon.Tweepersoons_Matrashoes" /> @Html.DisplayNameFor(model => model.Werkbon.Tweepersoons_Matrashoes)
+                    </label>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Werkbon.Barrel" /> @Html.DisplayNameFor(model => model.Werkbon.Barrel)
+                    </label>
 
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Werkbon.Handymankoffers" /> @Html.DisplayNameFor(model => model.Werkbon.Handymankoffers)
-                </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Werkbon.Handymankoffers" /> @Html.DisplayNameFor(model => model.Werkbon.Handymankoffers)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Werkbon.Extra_Materiaal" class="control-label"></label>
+                    <input asp-for="Werkbon.Extra_Materiaal" class="form-control" />
+                    <span asp-validation-for="Werkbon.Extra_Materiaal" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Werkbon.Extra_Materiaal" class="control-label"></label>
-                <input asp-for="Werkbon.Extra_Materiaal" class="form-control" />
-                <span asp-validation-for="Werkbon.Extra_Materiaal" class="text-danger"></span>
+
+            <div class="uitvoergegevens">
+                <h3>Uitvoeringsgegevens</h3>
+                <div class="form-group">
+                    <label asp-for="Werkbon.Vertrekuur_Zaak" class="control-label"></label>
+                    <input asp-for="Werkbon.Vertrekuur_Zaak" class="form-control vertrekuur" />
+                    <span asp-validation-for="Werkbon.Vertrekuur_Zaak" class="text-danger"></span>
+                </div>
+
+                <div class="form-group form-row">
+                    <div class="col-md-6">
+                        <label asp-for="Werkbon.Inpakken_Manuren" class="control-label"></label>
+                        <input asp-for="Werkbon.Inpakken_Manuren" class="form-control" />
+                        <span asp-validation-for="Werkbon.Inpakken_Manuren" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Werkbon.Uitpakken_Manuren" class="control-label"></label>
+                        <input asp-for="Werkbon.Uitpakken_Manuren" class="form-control" />
+                        <span asp-validation-for="Werkbon.Uitpakken_Manuren" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group form-row">
+                    <div class="col-md-6">
+                        <label asp-for="Werkbon.Montage_Manuren" class="control-label"></label>
+                        <input asp-for="Werkbon.Montage_Manuren" class="form-control" />
+                        <span asp-validation-for="Werkbon.Montage_Manuren" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Werkbon.Demontage_Manuren" class="control-label"></label>
+                        <input asp-for="Werkbon.Demontage_Manuren" class="form-control" />
+                        <span asp-validation-for="Werkbon.Demontage_Manuren" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <div class="col-md-3">
+                        <label asp-for="Werkbon.Aantal_Geladen" class="control-label"></label>
+                        <input asp-for="Werkbon.Aantal_Geladen" class="form-control" />
+                        <span asp-validation-for="Werkbon.Aantal_Geladen" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-3">
+                        <label asp-for="Werkbon.Starttijd_Laden" class="control-label"></label>
+                        <input asp-for="Werkbon.Starttijd_Laden" class="form-control" />
+                        <span asp-validation-for="Werkbon.Starttijd_Laden" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label asp-for="Werkbon.Eindtijd_Laden" class="control-label"></label>
+                        <input asp-for="Werkbon.Eindtijd_Laden" class="form-control" />
+                        <span asp-validation-for="Werkbon.Eindtijd_Laden" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-3">
+                        <label asp-for="Werkbon.Laaduur_Totaal" class="control-label"></label>
+                        <input asp-for="Werkbon.Laaduur_Totaal" class="form-control" />
+                        <span asp-validation-for="Werkbon.Laaduur_Totaal" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+                    <div class="col-md-3">
+                        <label asp-for="Werkbon.Aantal_Gelost" class="control-label"></label>
+                        <input asp-for="Werkbon.Aantal_Gelost" class="form-control" />
+                        <span asp-validation-for="Werkbon.Aantal_Gelost" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-3">
+                        <label asp-for="Werkbon.Starttijd_Lossen" class="control-label"></label>
+                        <input asp-for="Werkbon.Starttijd_Lossen" class="form-control" />
+                        <span asp-validation-for="Werkbon.Starttijd_Lossen" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-3">
+                        <label asp-for="Werkbon.Eindtijd_Lossen" class="control-label"></label>
+                        <input asp-for="Werkbon.Eindtijd_Lossen" class="form-control" />
+                        <span asp-validation-for="Werkbon.Eindtijd_Lossen" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-3">
+                        <label asp-for="Werkbon.Losuur_Totaal" class="control-label"></label>
+                        <input asp-for="Werkbon.Losuur_Totaal" class="form-control" />
+                        <span asp-validation-for="Werkbon.Losuur_Totaal" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Werkbon.Aankomsttijd_Zaak" class="control-label"></label>
+                    <input asp-for="Werkbon.Aankomsttijd_Zaak" class="form-control vertrekuur" />
+                    <span asp-validation-for="Werkbon.Aankomsttijd_Zaak" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="betalingcolumn">
+                <div class="form-group form-row">
+                    <div class="col-md-4">
+                        <label asp-for="Werkbon.Bedrag" class="control-label"></label>
+                        <input asp-for="Werkbon.Bedrag" class="form-control" />
+                        <span asp-validation-for="Werkbon.Bedrag" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label asp-for="Werkbon.Betaalwijze" class="control-label"></label>
+                        <select asp-for="Werkbon.Betaalwijze" class="form-control">
+                            <option value="Pin">Per pin</option>
+                            <option value="Contant">Contant</option>
+                            <option value="Op rekening">Op rekening</option>
+                        </select>
+                        <span asp-validation-for="Werkbon.Betaalwijze" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-4">
+                        <label asp-for="Werkbon.KostenPlaats" class="control-label"></label>
+                        <input asp-for="Werkbon.KostenPlaats" class="form-control" />
+                        <span asp-validation-for="Werkbon.KostenPlaats" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="uitvoergegevens">
-            <h3>Uitvoeringsgegevens</h3>
-            <div class="form-group">
-                <label asp-for="Werkbon.Vertrekuur_Zaak" class="control-label"></label>
-                <input asp-for="Werkbon.Vertrekuur_Zaak" class="form-control vertrekuur" />
-                <span asp-validation-for="Werkbon.Vertrekuur_Zaak" class="text-danger"></span>
-            </div>
-
-            <div class="form-group form-row">
-                <div class="col-md-6">
-                    <label asp-for="Werkbon.Inpakken_Manuren" class="control-label"></label>
-                    <input asp-for="Werkbon.Inpakken_Manuren" class="form-control" />
-                    <span asp-validation-for="Werkbon.Inpakken_Manuren" class="text-danger"></span>
-                </div>
-                <div class="col-md-6">
-                    <label asp-for="Werkbon.Uitpakken_Manuren" class="control-label"></label>
-                    <input asp-for="Werkbon.Uitpakken_Manuren" class="form-control" />
-                    <span asp-validation-for="Werkbon.Uitpakken_Manuren" class="text-danger"></span>
-                </div>
-            </div>
-
-            <div class="form-group form-row">
-                <div class="col-md-6">
-                    <label asp-for="Werkbon.Montage_Manuren" class="control-label"></label>
-                    <input asp-for="Werkbon.Montage_Manuren" class="form-control" />
-                    <span asp-validation-for="Werkbon.Montage_Manuren" class="text-danger"></span>
-                </div>
-                <div class="col-md-6">
-                    <label asp-for="Werkbon.Demontage_Manuren" class="control-label"></label>
-                    <input asp-for="Werkbon.Demontage_Manuren" class="form-control" />
-                    <span asp-validation-for="Werkbon.Demontage_Manuren" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="form-group form-row">
-                <div class="col-md-3">
-                    <label asp-for="Werkbon.Aantal_Geladen" class="control-label"></label>
-                    <input asp-for="Werkbon.Aantal_Geladen" class="form-control" />
-                    <span asp-validation-for="Werkbon.Aantal_Geladen" class="text-danger"></span>
-                </div>
-                <div class="col-md-3">
-                    <label asp-for="Werkbon.Starttijd_Laden" class="control-label"></label>
-                    <input asp-for="Werkbon.Starttijd_Laden" class="form-control" />
-                    <span asp-validation-for="Werkbon.Starttijd_Laden" class="text-danger"></span>
-                </div>
-
-                <div class="col-md-3">
-                    <label asp-for="Werkbon.Eindtijd_Laden" class="control-label"></label>
-                    <input asp-for="Werkbon.Eindtijd_Laden" class="form-control" />
-                    <span asp-validation-for="Werkbon.Eindtijd_Laden" class="text-danger"></span>
-                </div>
-                <div class="col-md-3">
-                    <label asp-for="Werkbon.Laaduur_Totaal" class="control-label"></label>
-                    <input asp-for="Werkbon.Laaduur_Totaal" class="form-control" />
-                    <span asp-validation-for="Werkbon.Laaduur_Totaal" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="form-group form-row">
-                <div class="col-md-3">
-                    <label asp-for="Werkbon.Aantal_Gelost" class="control-label"></label>
-                    <input asp-for="Werkbon.Aantal_Gelost" class="form-control" />
-                    <span asp-validation-for="Werkbon.Aantal_Gelost" class="text-danger"></span>
-                </div>
-                <div class="col-md-3">
-                    <label asp-for="Werkbon.Starttijd_Lossen" class="control-label"></label>
-                    <input asp-for="Werkbon.Starttijd_Lossen" class="form-control" />
-                    <span asp-validation-for="Werkbon.Starttijd_Lossen" class="text-danger"></span>
-                </div>
-                <div class="col-md-3">
-                    <label asp-for="Werkbon.Eindtijd_Lossen" class="control-label"></label>
-                    <input asp-for="Werkbon.Eindtijd_Lossen" class="form-control" />
-                    <span asp-validation-for="Werkbon.Eindtijd_Lossen" class="text-danger"></span>
-                </div>
-                <div class="col-md-3">
-                    <label asp-for="Werkbon.Losuur_Totaal" class="control-label"></label>
-                    <input asp-for="Werkbon.Losuur_Totaal" class="form-control" />
-                    <span asp-validation-for="Werkbon.Losuur_Totaal" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="form-group">
-                <label asp-for="Werkbon.Aankomsttijd_Zaak" class="control-label"></label>
-                <input asp-for="Werkbon.Aankomsttijd_Zaak" class="form-control vertrekuur" />
-                <span asp-validation-for="Werkbon.Aankomsttijd_Zaak" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="betalingcolumn">
-            <div class="form-group form-row">
-                <div class="col-md-4">
-                    <label asp-for="Werkbon.Bedrag" class="control-label"></label>
-                    <input asp-for="Werkbon.Bedrag" class="form-control" />
-                    <span asp-validation-for="Werkbon.Bedrag" class="text-danger"></span>
-                </div>
-
-                <div class="col-md-4">
-                    <label asp-for="Werkbon.Betaalwijze" class="control-label"></label>
-                    <select asp-for="Werkbon.Betaalwijze" class="form-control">
-                        <option value="Pin">Per pin</option>
-                        <option value="Contant">Contant</option>
-                        <option value="Op rekening">Op rekening</option>
-                    </select>
-                    <span asp-validation-for="Werkbon.Betaalwijze" class="text-danger"></span>
-                </div>
-                <div class="col-md-4">
-                    <label asp-for="Werkbon.KostenPlaats" class="control-label"></label>
-                    <input asp-for="Werkbon.KostenPlaats" class="form-control" />
-                    <span asp-validation-for="Werkbon.KostenPlaats" class="text-danger"></span>
-                </div>
-            </div>
-        </div>
-    </div>
     <br />
     <div class="form-group centerdiv">
         <input type="submit" id="accept" value="Opslaan" class="btn green createbtn" />

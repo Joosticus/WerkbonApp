@@ -121,65 +121,83 @@
             </ul>
         </div>
 
-        <div class="column">
-            <h3>Laadadres:</h3>
-            <dl class="form-group">
-                <dt class="col-sm-2">
-                    @Html.DisplayNameFor(model => model.Werkbon.LaadAdres)
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(model => model.Werkbon.LaadAdres)
-                </dd>
-            </dl>
+    <div class="column">
+        <h3>Laadadres:</h3>
+        <dl class="form-group">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Werkbon.LaadAdres)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Werkbon.LaadAdres)
+            </dd>
+        </dl>
 
-            <dl class="form-group">
-                <dt class="col-sm-2">
-                    @Html.DisplayNameFor(model => model.Werkbon.LaadPlaats)
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(model => model.Werkbon.LaadPlaats)
-                </dd>
-            </dl>
+        <dl class="form-group">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Werkbon.LaadPlaats)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Werkbon.LaadPlaats)
+            </dd>
+        </dl>
 
-            <div class="form-group">
-                <dt class="col-sm-2">
-                    @Html.DisplayNameFor(model => model.Werkbon.LaadEtage)
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(model => model.Werkbon.LaadEtage)
-                </dd>
-            </div>
+        <div class="form-group">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Werkbon.LaadEtage)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Werkbon.LaadEtage)
+            </dd>
         </div>
 
-        <div class="column">
-            <h3>Losadres:</h3>
-            <dl class="form-group">
-                <dt class="col-sm-6">
-                    @Html.DisplayNameFor(model => model.Werkbon.LosAdres)
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(model => model.Werkbon.LosAdres)
-                </dd>
-            </dl>
-
-            <dl class="form-group">
-                <dt class="col-sm-6">
-                    @Html.DisplayNameFor(model => model.Werkbon.LosPlaats)
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(model => model.Werkbon.LosPlaats)
-                </dd>
-            </dl>
-
-            <dl class="form-group">
-                <dt class="col-sm-6">
-                    @Html.DisplayNameFor(model => model.Werkbon.LosEtage)
-                </dt>
-                <dd class="col-sm-10">
-                    @Html.DisplayFor(model => model.Werkbon.LosEtage)
-                </dd>
-            </dl>
+        <div class="form-group">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Werkbon.Extra_Laadadres)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Werkbon.Extra_Laadadres)
+            </dd>
         </div>
+    </div>
+
+    <div class="column">
+        <h3>Losadres:</h3>
+        <dl class="form-group">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Werkbon.LosAdres)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Werkbon.LosAdres)
+            </dd>
+        </dl>
+
+        <dl class="form-group">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Werkbon.LosPlaats)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Werkbon.LosPlaats)
+            </dd>
+        </dl>
+
+        <dl class="form-group">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Werkbon.LosEtage)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Werkbon.LosEtage)
+            </dd>
+        </dl>
+
+        <dl class="form-group">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Werkbon.Extra_Losadres)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Werkbon.Extra_Losadres)
+            </dd>
+        </dl>
+    </div>
 
         <div class="column">
             <h3>Materiaal:</h3>

@@ -138,43 +138,57 @@
                 </ul>
             </div>
 
-            <div class="column">
-                <h3>Laadadres:</h3>
-                <div class="form-group">
+        <div class="column">
+            <h3>Laadadres:</h3>
+            <div class="form-group row">
+                <div class="col-md-10">
                     <label asp-for="Werkbon.LaadAdres" class="control-label"></label>
                     <input asp-for="Werkbon.LaadAdres" class="form-control" />
                     <span asp-validation-for="Werkbon.LaadAdres" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="Werkbon.LaadPlaats" class="control-label"></label>
-                    <input asp-for="Werkbon.LaadPlaats" class="form-control" />
-                    <span asp-validation-for="Werkbon.LaadPlaats" class="text-danger"></span>
-                </div>
-                <div class="form-group">
+                <div class="col-md-2">
                     <label asp-for="Werkbon.LaadEtage" class="control-label"></label>
                     <input asp-for="Werkbon.LaadEtage" class="form-control" />
                     <span asp-validation-for="Werkbon.LaadEtage" class="text-danger"></span>
                 </div>
             </div>
+            <div class="form-group">
+                <label asp-for="Werkbon.LaadPlaats" class="control-label"></label>
+                <input asp-for="Werkbon.LaadPlaats" class="form-control" />
+                <span asp-validation-for="Werkbon.LaadPlaats" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Werkbon.Extra_Laadadres" class="control-label"></label>
+                <textarea rows="2" asp-for="Werkbon.Extra_Laadadres" class="form-control"></textarea>
+                <span asp-validation-for="Werkbon.Extra_Laadadres" class="text-danger"></span>
+            </div>
+        </div>
 
             <div class="column">
                 <h3>Losadres:</h3>
-                <div class="form-group">
-                    <label asp-for="Werkbon.LosAdres" class="control-label"></label>
-                    <input asp-for="Werkbon.LosAdres" class="form-control" />
-                    <span asp-validation-for="Werkbon.LosAdres" class="text-danger"></span>
+                <div class="form-group row">
+                    <div class="col-md-10">
+                        <label asp-for="Werkbon.LosAdres" class="control-label"></label>
+                        <input asp-for="Werkbon.LosAdres" class="form-control" />
+                        <span asp-validation-for="Werkbon.LosAdres" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-2">
+                        <label asp-for="Werkbon.LosEtage" class="control-label"></label>
+                        <input asp-for="Werkbon.LosEtage" class="form-control" />
+                        <span asp-validation-for="Werkbon.LosEtage" class="text-danger"></span>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label asp-for="Werkbon.LosPlaats" class="control-label"></label>
-                    <input asp-for="Werkbon.LosPlaats" class="form-control" />
-                    <span asp-validation-for="Werkbon.LosPlaats" class="text-danger"></span>
+                    <div class="form-group">
+                        <label asp-for="Werkbon.LosPlaats" class="control-label"></label>
+                        <input asp-for="Werkbon.LosPlaats" class="form-control" />
+                        <span asp-validation-for="Werkbon.LosPlaats" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Werkbon.Extra_Losadres" class="control-label"></label>
+                        <textarea rows="2" asp-for="Werkbon.Extra_Losadres" class="form-control"></textarea>
+                        <span asp-validation-for="Werkbon.Extra_Losadres" class="text-danger"></span>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label asp-for="Werkbon.LosEtage" class="control-label"></label>
-                    <input asp-for="Werkbon.LosEtage" class="form-control" />
-                    <span asp-validation-for="Werkbon.LosEtage" class="text-danger"></span>
-                </div>
-            </div>
 
             <div class="column">
                 <h3>Materiaal:</h3>
