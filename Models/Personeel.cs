@@ -6,6 +6,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WerkbonApplicatie.Models
 {
+    /// <summary>
+    /// Personeelklasse en eigenschappen.
+    /// </summary>
     public class Personeel
     {
         public int PersoneelID { get; set; }

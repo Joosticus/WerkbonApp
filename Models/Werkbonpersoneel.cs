@@ -7,6 +7,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WerkbonApplicatie.Models
 {
+    /// <summary>
+    /// De koppeltabel tussen werkbon en personeel voor een specifieke verhuizing.
+    /// </summary>
     public class Werkbonpersoneel
     {
         [Display(Name = "Werknemer:")]

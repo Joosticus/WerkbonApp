@@ -25,6 +25,9 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
         [BindProperty]
         public Werkbon Werkbon { get; set; }
 
+        /// <summary>
+        /// Haalt de geselcteerde werkbon op via de ID 
+        /// </summary>
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             Werkbonpersoneels = await _context.Werkbonpersoneel
@@ -45,8 +48,9 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
             return Page();
         }
 
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        /// <summary>
+        /// Slaat de werkbon en alle gegevens op
+        /// </summary>
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)

@@ -1,8 +1,10 @@
-﻿@page "{Id?}"
+﻿@page
 @model WerkbonApplicatie.Pages.WerknemerModel
 @{
     ViewData["Title"] = "Werknemers toevoegen";
+   
     int x = 0;
+    // Haalt de laatste werkbon op om werknemers toe te voegen.
     foreach(var y in ViewBag.WerkbonID)
     {
         int result = Int32.Parse(y.Value);
@@ -11,7 +13,7 @@
 
 }
 
-<h1>Werknemers toevoegen</h1>
+<h1>Werknemers toevoegen aan de werkbon</h1>
 
 <form method="post">
     <div class="column">

@@ -22,6 +22,9 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
         [BindProperty]
         public Werkbon Werkbon { get; set; }
 
+        /// <summary>
+        /// Haalt de geselcteerde werkbon op via de ID 
+        /// </summary>
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
@@ -38,6 +41,9 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
             return Page();
         }
 
+        /// <summary>
+        /// Verwijdert de werkbon met de desbetreffende ID
+        /// </summary>
         public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (id == null)

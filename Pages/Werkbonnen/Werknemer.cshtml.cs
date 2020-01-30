@@ -26,9 +26,10 @@ namespace WerkbonApplicatie.Pages
 
         [BindProperty]
         public Werkbonpersoneel Werkbonpersoneel { get; set; }
-        [BindProperty(SupportsGet = true)]
-        public string Id { get; set; }
 
+        /// <summary>
+        /// Haalt de personeelslijst en de werkbonlijst op
+        /// </summary>
         public async Task OnGetAsync()
         {
             ViewData["PersoneelID"] = new SelectList(_context.Personeel, "PersoneelID", "Pesoneel_VoorNaam");
@@ -38,7 +39,9 @@ namespace WerkbonApplicatie.Pages
                 .Include(w => w.personeel)
                 .Include(w => w.werkbon).ToListAsync();
         }
-
+        /// <summary>
+        /// Slaat de werknemer op in combinatie met de werkbon.
+        /// </summary>
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)

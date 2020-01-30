@@ -18,10 +18,15 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
         {
             _context = context;
         }
-
+        /// <summary>
+        /// De lijst met personeel wordt opgehaald
+        /// </summary>
         public IList<Werkbonpersoneel> Werkbonpersoneels { get; set; }
         public Werkbon Werkbon { get; set; }
 
+        /// <summary>
+        /// Haalt de geselcteerde werkbon op via de ID 
+        /// </summary>
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             Werkbonpersoneels = await _context.Werkbonpersoneel

@@ -8,6 +8,9 @@ namespace WerkbonApplicatie.Models
 {
     public class Werkbon
     {
+        /// <summary>
+        /// Werkbonklasse en eigenschappen.
+        /// </summary>
         public int WerkbonID { get; set; }
         [Display(Name = "Contactpersoon:")]
         [Required (ErrorMessage ="Dit veld is verplicht.")]

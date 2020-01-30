@@ -28,7 +28,7 @@ namespace WerkbonApplicatie.Pages.Werkbonnen
             // Get all Personeel for filter list
             Personeel = await _context.Personeel.ToListAsync();
 
-            // Get all werbonnen
+            // Get all werkbonnen
             var werkbonnen = from m in _context.Werkbon
                                select m;
 
